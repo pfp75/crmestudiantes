@@ -1,93 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>CRM Estudiantes Avanzado</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-body {background: #f8f9fa; font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;}
-.table-wrap {overflow-x:auto;}
-.inline-input {width:100%;}
-</style>
+    <meta charset="UTF-8">
+    <title>CRM Estudiantes - Gráficas</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f4f4f4; }
+        h1 { color: #333; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 5px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        canvas { max-width: 600px; margin-top: 30px; }
+    </style>
 </head>
-<body class="container py-4">
-  <h1 class="mb-4">CRM de Estudiantes Avanzado</h1>
-  <div class="row g-3 mb-2">
-    <div class="col-md-4"><input type="text" id="buscador" class="form-control" placeholder="Buscar por nombre o correo"></div>
-    <div class="col-md-3">
-      <select id="filtroEstado" class="form-select">
-        <option value="">— Filtrar por estado —</option>
-      </select>
-    </div>
-    <div class="col-md-3">
-      <select id="filtroCurso" class="form-select">
-        <option value="">— Filtrar por curso —</option>
-      </select>
-    </div>
-    <div class="col-md-2 text-end">
-      <button class="btn btn-success" onclick="exportarCSV()">Exportar CSV</button>
-    </div>
-  </div>
+<body>
+    <h1>CRM de Estudiantes</h1>
 
-  <div class="card mb-3">
-    <div class="card-body">
-      <form id="formulario" class="row g-3">
-        <div class="col-md-3"><input type="text" id="nombre" class="form-control" placeholder="Nombre" required></div>
-        <div class="col-md-3"><input type="email" id="correo" class="form-control" placeholder="Correo" required></div>
-        <div class="col-md-2"><input type="tel" id="telefono" class="form-control" placeholder="Teléfono"></div>
-        <div class="col-md-2">
-          <select id="curso" class="form-select" required>
-            <option value="">Curso o carrera</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <select id="estado" class="form-select" required>
-            <option value="">Estado</option>
-            <option value="Primer contacto">🟡 Primer contacto</option>
-            <option value="Interesado">🟠 Interesado</option>
-            <option value="Evaluación">🔵 En evaluación</option>
-            <option value="Matriculado">🟢 Matriculado</option>
-            <option value="Egresado">⚪ Egresado</option>
-          </select>
-        </div>
-        <div class="col-12 text-end">
-          <button type="submit" class="btn btn-primary">Agregar / Actualizar</button>
-        </div>
-      </form>
-    </div>
-  </div>
+    <form id="formulario">
+        <label>Nombre: <input type="text" id="nombre" required></label>
+        <label>Correo: <input type="email" id="correo"></label>
+        <label>Curso: <input type="text" id="curso"></label>
+        <label>Estado:
+            <select id="estado">
+                <option value="Primer contacto">🟡 Primer contacto</option>
+                <option value="Interesado">🟠 Interesado</option>
+                <option value="Evaluación">🔵 En evaluación</option>
+                <option value="Matriculado">🟢 Matriculado</option>
+                <option value="Egresado">⚪ Egresado</option>
+            </select>
+        </label>
+        <button type="submit">Agregar estudiante</button>
+    </form>
 
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <div>Total visibles: <strong id="contador">0</strong></div>
-    <div>
-      <button class="btn btn-outline-secondary btn-sm" onclick="limpiarFiltros()">Limpiar filtros</button>
-    </div>
-  </div>
+    <p>Total estudiantes: <span id="contador">0</span></p>
 
-  <div class="table-wrap">
-    <table class="table table-bordered table-hover align-middle" id="tabla">
-      <thead class="table-light">
-        <tr>
-          <th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Curso</th><th>Estado</th><th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
+    <input type="text" id="busqueda" placeholder="Buscar por nombre o correo...">
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Nombre</th><th>Correo</th><th>Curso</th><th>Estado</th><th>Acción</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
     </table>
-  </div>
 
-  <div class="row mt-4">
-    <div class="col-md-6">
-      <h5>Estudiantes por estado</h5>
-      <canvas id="graficoEstado"></canvas>
-    </div>
-    <div class="col-md-6">
-      <h5>Estudiantes por curso</h5>
-      <canvas id="graficoCurso"></canvas>
-    </div>
-  </div>
+    <button onclick="exportarCSV()">Exportar CSV</button>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
+    <h2>Estudiantes por estado</h2>
+    <canvas id="graficoEstado"></canvas>
+
+    <h2>Estudiantes por curso</h2>
+    <canvas id="graficoCurso"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

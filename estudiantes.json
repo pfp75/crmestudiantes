@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Ana Torres",
+    "grupo": "A",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Luis G\u00f3mez",
+    "grupo": "B",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Mar\u00eda L\u00f3pez",
+    "grupo": "A",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Carlos Ruiz",
+    "grupo": "C",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Luc\u00eda Fern\u00e1ndez",
+    "grupo": "B",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Jorge M\u00e9ndez",
+    "grupo": "A",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Valeria Soto",
+    "grupo": "C",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Ricardo Vargas",
+    "grupo": "B",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Laura Mora",
+    "grupo": "A",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Sof\u00eda Campos",
+    "grupo": "C",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Pablo Rojas",
+    "grupo": "A",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Fernanda D\u00edaz",
+    "grupo": "B",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Emilio Rivera",
+    "grupo": "C",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Camila Jim\u00e9nez",
+    "grupo": "B",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Daniel Salas",
+    "grupo": "A",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Gabriela Quesada",
+    "grupo": "C",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "David Pineda",
+    "grupo": "B",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Isabela N\u00fa\u00f1ez",
+    "grupo": "C",
+    "estado": "En riesgo"
+  },
+  {
+    "nombre": "Felipe Chaves",
+    "grupo": "A",
+    "estado": "Activo"
+  },
+  {
+    "nombre": "Natalia Araya",
+    "grupo": "B",
+    "estado": "Activo"
+  }
+]

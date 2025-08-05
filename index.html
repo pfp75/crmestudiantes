@@ -2,93 +2,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>CRM Estudiantes</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Segmentos</h2>
-        <ul id="segmentList">
-            <li onclick="filtrarPorSegmento('Todos')">Todos</li>
-            <li onclick="filtrarPorSegmento('Primaria')">Primaria</li>
-            <li onclick="filtrarPorSegmento('Secundaria')">Secundaria</li>
-            <li onclick="filtrarPorSegmento('Universidad')">Universidad</li>
-        </ul>
+    <div id="sidebar">
+        <button onclick="filtrarSegmento('todos')">Todos</button>
+        <button onclick="filtrarSegmento('riesgo')">En Riesgo</button>
     </div>
-    <div class="main-content">
-        <h1>CRM Estudiantes</h1>
-        <button onclick="toggleModoOscuro()">🌙 Modo Oscuro</button>
-        <table id="tablaEstudiantes">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Curso</th>
-                    <th>Segmento</th>
-                    <th>Asistencia</th>
-                    <th>Calificación</th>
-                </tr>
-            </thead>
-            <tbody id="cuerpoTabla"></tbody>
-        </table>
-    </div>
-
-    <script>
-        const estudiantes = [
-            {"nombre":"Ana Gómez","correo":"ana.gomez@example.com","curso":"Matemáticas","segmento":"Primaria","asistencia":"Presente","calificacion":95},
-            {"nombre":"Luis Martínez","correo":"luis.martinez@example.com","curso":"Ciencias","segmento":"Secundaria","asistencia":"Ausente","calificacion":82},
-            {"nombre":"Carlos Rivera","correo":"carlos.rivera@example.com","curso":"Historia","segmento":"Primaria","asistencia":"Presente","calificacion":88},
-            {"nombre":"María López","correo":"maria.lopez@example.com","curso":"Español","segmento":"Secundaria","asistencia":"Presente","calificacion":91},
-            {"nombre":"José Ramírez","correo":"jose.ramirez@example.com","curso":"Inglés","segmento":"Universidad","asistencia":"Ausente","calificacion":76},
-            {"nombre":"Laura Torres","correo":"laura.torres@example.com","curso":"Física","segmento":"Universidad","asistencia":"Presente","calificacion":85},
-            {"nombre":"Pedro Sánchez","correo":"pedro.sanchez@example.com","curso":"Química","segmento":"Secundaria","asistencia":"Presente","calificacion":79},
-            {"nombre":"Elena Castro","correo":"elena.castro@example.com","curso":"Arte","segmento":"Primaria","asistencia":"Ausente","calificacion":90},
-            {"nombre":"Andrés Vargas","correo":"andres.vargas@example.com","curso":"Educación Física","segmento":"Secundaria","asistencia":"Presente","calificacion":86},
-            {"nombre":"Natalia Herrera","correo":"natalia.herrera@example.com","curso":"Biología","segmento":"Universidad","asistencia":"Presente","calificacion":94},
-            {"nombre":"Jorge Rojas","correo":"jorge.rojas@example.com","curso":"Literatura","segmento":"Primaria","asistencia":"Ausente","calificacion":72},
-            {"nombre":"Camila Díaz","correo":"camila.diaz@example.com","curso":"Informática","segmento":"Universidad","asistencia":"Presente","calificacion":93},
-            {"nombre":"Felipe Morales","correo":"felipe.morales@example.com","curso":"Cívica","segmento":"Secundaria","asistencia":"Presente","calificacion":81},
-            {"nombre":"Valentina Jiménez","correo":"valentina.jimenez@example.com","curso":"Música","segmento":"Primaria","asistencia":"Presente","calificacion":89},
-            {"nombre":"Sebastián Molina","correo":"sebastian.molina@example.com","curso":"Religión","segmento":"Secundaria","asistencia":"Ausente","calificacion":77},
-            {"nombre":"Daniela Soto","correo":"daniela.soto@example.com","curso":"Matemáticas","segmento":"Universidad","asistencia":"Presente","calificacion":96},
-            {"nombre":"Martín Salazar","correo":"martin.salazar@example.com","curso":"Ciencias","segmento":"Primaria","asistencia":"Presente","calificacion":87},
-            {"nombre":"Isabella Ruiz","correo":"isabella.ruiz@example.com","curso":"Arte","segmento":"Secundaria","asistencia":"Presente","calificacion":92},
-            {"nombre":"Tomás Castro","correo":"tomas.castro@example.com","curso":"Historia","segmento":"Universidad","asistencia":"Ausente","calificacion":80},
-            {"nombre":"Lucía Navarro","correo":"lucia.navarro@example.com","curso":"Español","segmento":"Primaria","asistencia":"Presente","calificacion":84}
-        ];
-
-        function mostrarEstudiantes(lista) {
-            const tabla = document.getElementById("cuerpoTabla");
-            tabla.innerHTML = "";
-            lista.forEach(est => {
-                const fila = document.createElement("tr");
-                fila.innerHTML = `
-                    <td>${est.nombre}</td>
-                    <td>${est.correo}</td>
-                    <td>${est.curso}</td>
-                    <td>${est.segmento}</td>
-                    <td>${est.asistencia}</td>
-                    <td>${est.calificacion}</td>`;
-                tabla.appendChild(fila);
-            });
-        }
-
-        function filtrarPorSegmento(segmento) {
-            if (segmento === "Todos") {
-                mostrarEstudiantes(estudiantes);
-            } else {
-                const filtrados = estudiantes.filter(e => e.segmento === segmento);
-                mostrarEstudiantes(filtrados);
-            }
-        }
-
-        function toggleModoOscuro() {
-            document.body.classList.toggle("oscuro");
-        }
-
-        mostrarEstudiantes(estudiantes);
-    </script>
+    <main id="contenido">
+        <h1>Lista de Estudiantes</h1>
+        <table id="tabla-estudiantes"></table>
+        <div id="perfil-estudiante"></div>
+    </main>
+    <button id="modo-oscuro-toggle">Modo Oscuro</button>
+    <script src="script.js"></script>
 </body>
 </html>

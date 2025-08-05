@@ -2,34 +2,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CRM Estudiantes</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM para Estudiantes</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header>
-    <h1>CRM para Estudiantes</h1>
-    <button onclick="toggleDarkMode()">Modo Oscuro</button>
-  </header>
+    <button id="modoOscuroBtn">Modo Oscuro</button>
+    <div class="contenedor">
+        <h1>CRM para Estudiantes</h1>
 
-  <main>
-    <section id="registro">
-      <h2>Agregar Estudiante</h2>
-      <form id="formEstudiante">
-        <input type="text" id="nombre" placeholder="Nombre" required/>
-        <input type="text" id="grupo" placeholder="Grupo" required/>
-        <input type="email" id="correo" placeholder="Correo" required/>
-        <button type="submit">Agregar</button>
-      </form>
-    </section>
+        <section id="agregar-estudiante">
+            <h2>Agregar Estudiante</h2>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="grupo" placeholder="Grupo">
+            <input type="email" id="correo" placeholder="Correo">
+            <button onclick="agregarEstudiante()">Agregar</button>
+        </section>
 
-    <section id="lista">
-      <h2>Lista de Estudiantes</h2>
-      <ul id="listaEstudiantes"></ul>
-    </section>
-  </main>
+        <section id="segmentos">
+            <h2>Segmentar Estudiantes</h2>
+            <button onclick="mostrarTodos()">Todos</button>
+            <button onclick="mostrarEnRiesgo()">En Riesgo</button>
+        </section>
 
-  <script src="script.js"></script>
+        <section id="estadisticas">
+            <h2>Estadísticas</h2>
+            <p>Total de estudiantes: <span id="total-estudiantes">0</span></p>
+            <p>Estudiantes en riesgo: <span id="total-riesgo">0</span></p>
+        </section>
+
+        <section id="lista-estudiantes">
+            <h2>Lista de Estudiantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Grupo</th>
+                        <th>Correo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-estudiantes">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

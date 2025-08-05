@@ -1,7 +1,6 @@
+
 [
-    { "id": 1, "nombre": "Carlos Rojas", "grupo": "A", "segmento": "normal" },
-    { "id": 2, "nombre": "Ana Ruiz", "grupo": "B", "segmento": "en_riesgo" },
-    { "id": 3, "nombre": "Luis Mora", "grupo": "A", "segmento": "normal" },
-    { "id": 4, "nombre": "Esteban Pérez", "grupo": "C", "segmento": "en_riesgo" },
-    { "id": 5, "nombre": "María Vargas", "grupo": "B", "segmento": "normal" }
+    {"nombre": "Ana Torres", "grupo": "A1", "correo": "ana@correo.com", "riesgo": false},
+    {"nombre": "Luis Pérez", "grupo": "B2", "correo": "luis@correo.com", "riesgo": true},
+    {"nombre": "Carla Ramírez", "grupo": "A1", "correo": "carla@correo.com", "riesgo": false}
 ]

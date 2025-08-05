@@ -1,22 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM Estudiantes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-    <div id="sidebar">
-        <button onclick="filtrarSegmento('todos')">Todos</button>
-        <button onclick="filtrarSegmento('riesgo')">En Riesgo</button>
-    </div>
-    <main id="contenido">
-        <h1>Lista de Estudiantes</h1>
-        <table id="tabla-estudiantes"></table>
-        <div id="perfil-estudiante"></div>
+    <header>
+        <h1>CRM de Estudiantes</h1>
+        <button id="toggleDarkMode">Modo Oscuro</button>
+    </header>
+
+    <nav class="menu-principal">
+        <button onclick="mostrarSeccion('estudiantes')">Estudiantes</button>
+        <button onclick="mostrarSeccion('asistencia')">Asistencia</button>
+        <button onclick="mostrarSeccion('calificaciones')">Calificaciones</button>
+        <button onclick="mostrarSeccion('estadisticas')">Estadísticas</button>
+    </nav>
+
+    <main>
+        <section id="estudiantes" class="seccion">
+            <h2>Listado de Estudiantes</h2>
+            <div id="filtros">
+                <button onclick="filtrarSegmento('todos')">Todos</button>
+                <button onclick="filtrarSegmento('en_riesgo')">En Riesgo</button>
+            </div>
+            <ul id="lista-estudiantes"></ul>
+        </section>
+
+        <section id="asistencia" class="seccion oculto">
+            <h2>Registro de Asistencia</h2>
+            <p>Funcionalidad en desarrollo.</p>
+        </section>
+
+        <section id="calificaciones" class="seccion oculto">
+            <h2>Calificaciones</h2>
+            <p>Funcionalidad en desarrollo.</p>
+        </section>
+
+        <section id="estadisticas" class="seccion oculto">
+            <h2>Estadísticas</h2>
+            <canvas id="grafico"></canvas>
+        </section>
     </main>
-    <button id="modo-oscuro-toggle">Modo Oscuro</button>
+
     <script src="script.js"></script>
 </body>
 </html>

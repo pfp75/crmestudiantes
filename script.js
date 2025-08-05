@@ -1,29 +1,32 @@
-
 let estudiantes = [];
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('estudiantes.json')
-        .then(res => res.json())
-        .then(data => {
-            estudiantes = data;
-            renderTabla(estudiantes);
-        });
-    document.getElementById('modo-oscuro-toggle').addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
+let modoOscuro = false;
+
+document.getElementById("toggleDarkMode").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    modoOscuro = !modoOscuro;
 });
 
-function renderTabla(lista) {
-    const tabla = document.getElementById('tabla-estudiantes');
-    tabla.innerHTML = '<tr><th>Nombre</th><th>Grupo</th><th>Estado</th></tr>';
-    lista.forEach(est => {
-        tabla.innerHTML += `<tr><td>${est.nombre}</td><td>${est.grupo}</td><td>${est.estado}</td></tr>`;
-    });
+function mostrarSeccion(id) {
+    document.querySelectorAll(".seccion").forEach(sec => sec.classList.add("oculto"));
+    document.getElementById(id).classList.remove("oculto");
 }
 
 function filtrarSegmento(tipo) {
-    if (tipo === 'todos') {
-        renderTabla(estudiantes);
-    } else if (tipo === 'riesgo') {
-        renderTabla(estudiantes.filter(e => e.estado === 'En riesgo'));
-    }
+    const lista = document.getElementById("lista-estudiantes");
+    lista.innerHTML = "";
+
+    const filtrados = tipo === "en_riesgo" ? estudiantes.filter(e => e.segmento === "en_riesgo") : estudiantes;
+
+    filtrados.forEach(est => {
+        const li = document.createElement("li");
+        li.textContent = `${est.nombre} (${est.grupo})`;
+        lista.appendChild(li);
+    });
 }
+
+fetch("estudiantes.json")
+    .then(resp => resp.json())
+    .then(data => {
+        estudiantes = data;
+        filtrarSegmento("todos");
+    });

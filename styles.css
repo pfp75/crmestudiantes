@@ -1,0 +1,19 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+}
+body.dark {
+  background-color: #222;
+  color: #eee;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form {
+  margin-bottom: 20px;
+}

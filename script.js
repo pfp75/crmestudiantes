@@ -1,32 +1,34 @@
-let estudiantes = [];
-let modoOscuro = false;
 
-document.getElementById("toggleDarkMode").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    modoOscuro = !modoOscuro;
+document.addEventListener("DOMContentLoaded", () => {
+  const lista = document.getElementById("listaEstudiantes");
+  const form = document.getElementById("formEstudiante");
+  const estudiantes = JSON.parse(localStorage.getItem("estudiantes")) || [];
+
+  function renderEstudiantes() {
+    lista.innerHTML = "";
+    estudiantes.forEach((e, index) => {
+      const li = document.createElement("li");
+      li.textContent = `${e.nombre} (${e.grupo}) - ${e.correo}`;
+      lista.appendChild(li);
+    });
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nuevo = {
+      nombre: document.getElementById("nombre").value,
+      grupo: document.getElementById("grupo").value,
+      correo: document.getElementById("correo").value,
+    };
+    estudiantes.push(nuevo);
+    localStorage.setItem("estudiantes", JSON.stringify(estudiantes));
+    renderEstudiantes();
+    form.reset();
+  });
+
+  renderEstudiantes();
 });
 
-function mostrarSeccion(id) {
-    document.querySelectorAll(".seccion").forEach(sec => sec.classList.add("oculto"));
-    document.getElementById(id).classList.remove("oculto");
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
 }
-
-function filtrarSegmento(tipo) {
-    const lista = document.getElementById("lista-estudiantes");
-    lista.innerHTML = "";
-
-    const filtrados = tipo === "en_riesgo" ? estudiantes.filter(e => e.segmento === "en_riesgo") : estudiantes;
-
-    filtrados.forEach(est => {
-        const li = document.createElement("li");
-        li.textContent = `${est.nombre} (${est.grupo})`;
-        lista.appendChild(li);
-    });
-}
-
-fetch("estudiantes.json")
-    .then(resp => resp.json())
-    .then(data => {
-        estudiantes = data;
-        filtrarSegmento("todos");
-    });

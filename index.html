@@ -1,50 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRM Estudiantes</title>
-    <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM Estudiantes</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <h1>CRM de Estudiantes</h1>
-        <button id="toggleDarkMode">Modo Oscuro</button>
-    </header>
+  <header>
+    <h1>CRM para Estudiantes</h1>
+    <button onclick="toggleDarkMode()">Modo Oscuro</button>
+  </header>
 
-    <nav class="menu-principal">
-        <button onclick="mostrarSeccion('estudiantes')">Estudiantes</button>
-        <button onclick="mostrarSeccion('asistencia')">Asistencia</button>
-        <button onclick="mostrarSeccion('calificaciones')">Calificaciones</button>
-        <button onclick="mostrarSeccion('estadisticas')">Estadísticas</button>
-    </nav>
+  <main>
+    <section id="registro">
+      <h2>Agregar Estudiante</h2>
+      <form id="formEstudiante">
+        <input type="text" id="nombre" placeholder="Nombre" required/>
+        <input type="text" id="grupo" placeholder="Grupo" required/>
+        <input type="email" id="correo" placeholder="Correo" required/>
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
 
-    <main>
-        <section id="estudiantes" class="seccion">
-            <h2>Listado de Estudiantes</h2>
-            <div id="filtros">
-                <button onclick="filtrarSegmento('todos')">Todos</button>
-                <button onclick="filtrarSegmento('en_riesgo')">En Riesgo</button>
-            </div>
-            <ul id="lista-estudiantes"></ul>
-        </section>
+    <section id="lista">
+      <h2>Lista de Estudiantes</h2>
+      <ul id="listaEstudiantes"></ul>
+    </section>
+  </main>
 
-        <section id="asistencia" class="seccion oculto">
-            <h2>Registro de Asistencia</h2>
-            <p>Funcionalidad en desarrollo.</p>
-        </section>
-
-        <section id="calificaciones" class="seccion oculto">
-            <h2>Calificaciones</h2>
-            <p>Funcionalidad en desarrollo.</p>
-        </section>
-
-        <section id="estadisticas" class="seccion oculto">
-            <h2>Estadísticas</h2>
-            <canvas id="grafico"></canvas>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

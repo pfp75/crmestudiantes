@@ -1,53 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM para Estudiantes</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM Supermercado</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <button id="modoOscuroBtn">Modo Oscuro</button>
-    <div class="contenedor">
-        <h1>CRM para Estudiantes</h1>
-
-        <section id="agregar-estudiante">
-            <h2>Agregar Estudiante</h2>
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="text" id="grupo" placeholder="Grupo">
-            <input type="email" id="correo" placeholder="Correo">
-            <button onclick="agregarEstudiante()">Agregar</button>
-        </section>
-
-        <section id="segmentos">
-            <h2>Segmentar Estudiantes</h2>
-            <button onclick="mostrarTodos()">Todos</button>
-            <button onclick="mostrarEnRiesgo()">En Riesgo</button>
-        </section>
-
-        <section id="estadisticas">
-            <h2>Estadísticas</h2>
-            <p>Total de estudiantes: <span id="total-estudiantes">0</span></p>
-            <p>Estudiantes en riesgo: <span id="total-riesgo">0</span></p>
-        </section>
-
-        <section id="lista-estudiantes">
-            <h2>Lista de Estudiantes</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Grupo</th>
-                        <th>Correo</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
-                <tbody id="tabla-estudiantes">
-                </tbody>
-            </table>
-        </section>
+  <div class="sidebar">
+    <h2>Menú</h2>
+    <ul>
+      <li onclick="mostrar('clientes')">Clientes</li>
+      <li onclick="mostrar('historial')">Historial</li>
+      <li onclick="mostrar('estadisticas')">Estadísticas</li>
+      <li onclick="mostrar('exportar')">Exportar</li>
+    </ul>
+  </div>
+  <div class="main">
+    <h1>CRM Supermercado</h1>
+    <div id="clientes" class="seccion">
+      <h2>Clientes</h2>
+      <div id="lista-clientes"></div>
     </div>
-    <script src="script.js"></script>
+    <div id="historial" class="seccion" style="display:none;">
+      <h2>Historial de Compras</h2>
+      <div id="historial-clientes"></div>
+    </div>
+    <div id="estadisticas" class="seccion" style="display:none;">
+      <h2>Estadísticas</h2>
+      <div id="estadisticas-clientes"></div>
+    </div>
+    <div id="exportar" class="seccion" style="display:none;">
+      <h2>Exportar Datos</h2>
+      <button onclick="exportarCSV()">Descargar CSV</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>

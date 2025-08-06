@@ -1,19 +1,28 @@
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: #121212;
+  color: #fff;
+}
+.sidebar {
+  width: 200px;
+  background-color: #1e1e1e;
+  padding: 15px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+.main {
+  flex-grow: 1;
   padding: 20px;
 }
-body.dark {
-  background-color: #222;
-  color: #eee;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-form {
-  margin-bottom: 20px;
+.seccion {
+  margin-top: 20px;
 }

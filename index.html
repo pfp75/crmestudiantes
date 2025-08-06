@@ -1,40 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CRM Supermercado</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM de Clientes - Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Menú</h2>
-    <ul>
-      <li onclick="mostrar('clientes')">Clientes</li>
-      <li onclick="mostrar('historial')">Historial</li>
-      <li onclick="mostrar('estadisticas')">Estadísticas</li>
-      <li onclick="mostrar('exportar')">Exportar</li>
-    </ul>
-  </div>
-  <div class="main">
-    <h1>CRM Supermercado</h1>
-    <div id="clientes" class="seccion">
-      <h2>Clientes</h2>
-      <div id="lista-clientes"></div>
-    </div>
-    <div id="historial" class="seccion" style="display:none;">
-      <h2>Historial de Compras</h2>
-      <div id="historial-clientes"></div>
-    </div>
-    <div id="estadisticas" class="seccion" style="display:none;">
-      <h2>Estadísticas</h2>
-      <div id="estadisticas-clientes"></div>
-    </div>
-    <div id="exportar" class="seccion" style="display:none;">
-      <h2>Exportar Datos</h2>
-      <button onclick="exportarCSV()">Descargar CSV</button>
-    </div>
-  </div>
-  <script src="app.js"></script>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Facturación</a></li>
+            <li><a href="#">Estadísticas</a></li>
+        </ul>
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+
+    <main>
+        <h1>Lista de Clientes</h1>
+        <div class="cliente">
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Método de pago:</strong> Tarjeta</p>
+            <p><strong>Número de factura:</strong> 001-123456</p>
+            <p><strong>Productos:</strong> Arroz, Frijoles, Leche</p>
+        </div>
+        <div class="cliente">
+            <p><strong>Nombre:</strong> Ana Gómez</p>
+            <p><strong>Método de pago:</strong> Efectivo</p>
+            <p><strong>Número de factura:</strong> 002-654321</p>
+            <p><strong>Productos:</strong> Pan, Huevos, Café</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

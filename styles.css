@@ -1,28 +1,74 @@
 
 body {
-  font-family: sans-serif;
-  margin: 0;
-  display: flex;
-  background-color: #121212;
-  color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
-.sidebar {
-  width: 200px;
-  background-color: #1e1e1e;
-  padding: 15px;
+
+.top-nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.sidebar ul {
-  list-style: none;
-  padding: 0;
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
 }
-.sidebar li {
-  margin: 10px 0;
-  cursor: pointer;
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
 }
-.main {
-  flex-grow: 1;
-  padding: 20px;
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
 }
-.seccion {
-  margin-top: 20px;
+
+main {
+    padding: 20px;
+}
+
+.cliente {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cliente p {
+    margin: 5px 10px 5px 0;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .top-nav {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .top-nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode #darkModeToggle {
+    color: #e0e0e0;
 }

@@ -1,4 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("dark-mode-toggle");
+    const body = document.body;
 
-document.getElementById('darkModeToggle').addEventListener('click', function () {
-    document.body.classList.toggle('dark-mode');
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+    });
 });
+
+function showSection(id) {
+    document.querySelectorAll(".section").forEach(section => {
+        section.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+}

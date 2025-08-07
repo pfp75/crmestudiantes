@@ -4,36 +4,637 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM de Clientes - Supermercado</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CRM Supermercado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+            background-color: #3f51b5;
+            color: white;
+        }
+        .contenido {
+            padding: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        .dark-mode th {
+            background-color: #1f1f1f;
+        }
+        .modo-oscuro-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <nav class="top-nav">
-        <ul>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Facturación</a></li>
-            <li><a href="#">Estadísticas</a></li>
-        </ul>
-        <button id="darkModeToggle">🌙</button>
-    </nav>
+    <div class="menu">
+        <div>Inicio</div>
+        <div>Clientes</div>
+        <div>Facturas</div>
+        <div>Productos</div>
+        <div>Reportes</div>
+    </div>
 
-    <main>
-        <h1>Lista de Clientes</h1>
-        <div class="cliente">
-            <p><strong>Nombre:</strong> Juan Pérez</p>
-            <p><strong>Método de pago:</strong> Tarjeta</p>
-            <p><strong>Número de factura:</strong> 001-123456</p>
-            <p><strong>Productos:</strong> Arroz, Frijoles, Leche</p>
-        </div>
-        <div class="cliente">
-            <p><strong>Nombre:</strong> Ana Gómez</p>
-            <p><strong>Método de pago:</strong> Efectivo</p>
-            <p><strong>Número de factura:</strong> 002-654321</p>
-            <p><strong>Productos:</strong> Pan, Huevos, Café</p>
-        </div>
-    </main>
+    <button class="modo-oscuro-btn" onclick="toggleModoOscuro()">Modo Oscuro</button>
 
-    <script src="script.js"></script>
+    <div class="contenido">
+        <h1>Listado de Clientes</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Método de pago</th>
+                <th>Número de factura</th>
+                <th>Producto</th>
+                <th>Monto</th>
+            </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Roberto Guerrero Cintrón</td>
+            <td>593-248-9924</td>
+            <td>sara67@industrias.com</td>
+            <td>Tarjeta</td>
+            <td>607373</td>
+            <td>Huevos</td>
+            <td>14778</td>
+        </tr>
+    
+        <tr>
+            <td>2</td>
+            <td>Clemente Víctor Arreola Valladares</td>
+            <td>06964915764</td>
+            <td>marcos88@gmail.com</td>
+            <td>Sinpe Móvil</td>
+            <td>107055</td>
+            <td>Refresco</td>
+            <td>14055</td>
+        </tr>
+    
+        <tr>
+            <td>3</td>
+            <td>Federico Barajas</td>
+            <td>1-377-195-8023</td>
+            <td>aldonza14@serrano-carbajal.info</td>
+            <td>Efectivo</td>
+            <td>629432</td>
+            <td>Verduras</td>
+            <td>24752</td>
+        </tr>
+    
+        <tr>
+            <td>4</td>
+            <td>Agustín Márquez Barrera</td>
+            <td>1-296-677-4229</td>
+            <td>aurora50@frias-nava.com</td>
+            <td>Efectivo</td>
+            <td>968171</td>
+            <td>Frutas</td>
+            <td>7546</td>
+        </tr>
+    
+        <tr>
+            <td>5</td>
+            <td>Minerva Carlos Arellano</td>
+            <td>+52(4)0625498453</td>
+            <td>ericcontreras@serrato.com</td>
+            <td>Transferencia</td>
+            <td>742799</td>
+            <td>Pan</td>
+            <td>12492</td>
+        </tr>
+    
+        <tr>
+            <td>6</td>
+            <td>Modesto Alejandro Carvajal</td>
+            <td>494.883.5864</td>
+            <td>ana-luisabarraza@valencia.com</td>
+            <td>Transferencia</td>
+            <td>548732</td>
+            <td>Carne</td>
+            <td>32189</td>
+        </tr>
+    
+        <tr>
+            <td>7</td>
+            <td>Mateo Frida Corrales</td>
+            <td>703.332.9673x8536</td>
+            <td>teodoro45@vaca-valadez.info</td>
+            <td>Transferencia</td>
+            <td>15384</td>
+            <td>Leche</td>
+            <td>40446</td>
+        </tr>
+    
+        <tr>
+            <td>8</td>
+            <td>Ignacio Rosalia Negrón Bustamante</td>
+            <td>108.389.4264x588</td>
+            <td>oaranda@grupo.net</td>
+            <td>Sinpe Móvil</td>
+            <td>98993</td>
+            <td>Leche</td>
+            <td>44630</td>
+        </tr>
+    
+        <tr>
+            <td>9</td>
+            <td>Josefina Limón Vallejo</td>
+            <td>06427628263</td>
+            <td>grijalvaalvaro@gmail.com</td>
+            <td>Efectivo</td>
+            <td>382944</td>
+            <td>Leche</td>
+            <td>3369</td>
+        </tr>
+    
+        <tr>
+            <td>10</td>
+            <td>Abril Jaimes</td>
+            <td>942.825.5872</td>
+            <td>pilarpartida@grupo.com</td>
+            <td>Tarjeta</td>
+            <td>606084</td>
+            <td>Verduras</td>
+            <td>5527</td>
+        </tr>
+    
+        <tr>
+            <td>11</td>
+            <td>Ing. Liliana Ruiz</td>
+            <td>1-200-956-4686</td>
+            <td>elvia39@muniz-alcaraz.com</td>
+            <td>Efectivo</td>
+            <td>810379</td>
+            <td>Leche</td>
+            <td>24316</td>
+        </tr>
+    
+        <tr>
+            <td>12</td>
+            <td>Alfredo Abigail Hernádez</td>
+            <td>(317)419-1908</td>
+            <td>ivonne25@gmail.com</td>
+            <td>Sinpe Móvil</td>
+            <td>330407</td>
+            <td>Pan</td>
+            <td>14478</td>
+        </tr>
+    
+        <tr>
+            <td>13</td>
+            <td>Sr(a). Lourdes Lara</td>
+            <td>07478438014</td>
+            <td>kserrato@yahoo.com</td>
+            <td>Transferencia</td>
+            <td>589824</td>
+            <td>Refresco</td>
+            <td>1491</td>
+        </tr>
+    
+        <tr>
+            <td>14</td>
+            <td>Porfirio Mario Garica</td>
+            <td>+61(1)1803616181</td>
+            <td>lflores@gmail.com</td>
+            <td>Transferencia</td>
+            <td>112240</td>
+            <td>Pan</td>
+            <td>30869</td>
+        </tr>
+    
+        <tr>
+            <td>15</td>
+            <td>Samuel Francisca Báez</td>
+            <td>1-808-729-3597</td>
+            <td>abraham86@industrias.com</td>
+            <td>Transferencia</td>
+            <td>162758</td>
+            <td>Detergente</td>
+            <td>7633</td>
+        </tr>
+    
+        <tr>
+            <td>16</td>
+            <td>Lic. Eduardo Quintero</td>
+            <td>+59(2)2214764328</td>
+            <td>quesadaelvira@fuentes.biz</td>
+            <td>Efectivo</td>
+            <td>930727</td>
+            <td>Carne</td>
+            <td>2873</td>
+        </tr>
+    
+        <tr>
+            <td>17</td>
+            <td>Isaac Patiño Navarrete</td>
+            <td>(759)401-7930</td>
+            <td>wguerrero@yahoo.com</td>
+            <td>Transferencia</td>
+            <td>740409</td>
+            <td>Leche</td>
+            <td>32538</td>
+        </tr>
+    
+        <tr>
+            <td>18</td>
+            <td>Esteban Jacinto Ojeda</td>
+            <td>798.544.8918</td>
+            <td>daniel87@ulibarri.biz</td>
+            <td>Transferencia</td>
+            <td>243093</td>
+            <td>Frutas</td>
+            <td>13143</td>
+        </tr>
+    
+        <tr>
+            <td>19</td>
+            <td>Armando Regalado Salinas</td>
+            <td>575-900-5909x358</td>
+            <td>ccamarillo@yahoo.com</td>
+            <td>Transferencia</td>
+            <td>467629</td>
+            <td>Refresco</td>
+            <td>46548</td>
+        </tr>
+    
+        <tr>
+            <td>20</td>
+            <td>Dr. Renato Guzmán</td>
+            <td>1-975-917-0085x14392</td>
+            <td>caguilera@arevalo.org</td>
+            <td>Sinpe Móvil</td>
+            <td>679166</td>
+            <td>Detergente</td>
+            <td>8712</td>
+        </tr>
+    
+        <tr>
+            <td>21</td>
+            <td>Lic. Leonor Barrios</td>
+            <td>(917)256-4542x51119</td>
+            <td>eadame@hotmail.com</td>
+            <td>Transferencia</td>
+            <td>413202</td>
+            <td>Detergente</td>
+            <td>34811</td>
+        </tr>
+    
+        <tr>
+            <td>22</td>
+            <td>Jesús Mario Pizarro Carrión</td>
+            <td>104.459.2778x320</td>
+            <td>qirizarry@gmail.com</td>
+            <td>Efectivo</td>
+            <td>90154</td>
+            <td>Verduras</td>
+            <td>23052</td>
+        </tr>
+    
+        <tr>
+            <td>23</td>
+            <td>Débora Puente</td>
+            <td>239-218-2605</td>
+            <td>palomoclaudia@hotmail.com</td>
+            <td>Sinpe Móvil</td>
+            <td>802890</td>
+            <td>Detergente</td>
+            <td>28626</td>
+        </tr>
+    
+        <tr>
+            <td>24</td>
+            <td>Porfirio Frías</td>
+            <td>438-076-0578x6950</td>
+            <td>reynaldoortiz@club.info</td>
+            <td>Sinpe Móvil</td>
+            <td>778418</td>
+            <td>Verduras</td>
+            <td>41056</td>
+        </tr>
+    
+        <tr>
+            <td>25</td>
+            <td>Olga Jacinto Avilés</td>
+            <td>(903)689-8853x8756</td>
+            <td>motaaugusto@hotmail.com</td>
+            <td>Sinpe Móvil</td>
+            <td>188001</td>
+            <td>Detergente</td>
+            <td>1103</td>
+        </tr>
+    
+        <tr>
+            <td>26</td>
+            <td>Ing. Magdalena Cardenas</td>
+            <td>030.515.2053</td>
+            <td>jose-eduardo72@brito.com</td>
+            <td>Transferencia</td>
+            <td>442758</td>
+            <td>Carne</td>
+            <td>45227</td>
+        </tr>
+    
+        <tr>
+            <td>27</td>
+            <td>Celia Cynthia Quiñónez Segovia</td>
+            <td>244-583-2618</td>
+            <td>oacuna@casarez.com</td>
+            <td>Tarjeta</td>
+            <td>576066</td>
+            <td>Verduras</td>
+            <td>2646</td>
+        </tr>
+    
+        <tr>
+            <td>28</td>
+            <td>Sr(a). Andrés Rascón</td>
+            <td>576.625.7094x127</td>
+            <td>mfrias@anguiano-menendez.net</td>
+            <td>Tarjeta</td>
+            <td>440115</td>
+            <td>Frutas</td>
+            <td>33706</td>
+        </tr>
+    
+        <tr>
+            <td>29</td>
+            <td>Ángela Hernández</td>
+            <td>131-018-3183x9253</td>
+            <td>santillanesparta@meraz.biz</td>
+            <td>Efectivo</td>
+            <td>46251</td>
+            <td>Frutas</td>
+            <td>11028</td>
+        </tr>
+    
+        <tr>
+            <td>30</td>
+            <td>Sr(a). Carlos Valdivia</td>
+            <td>1-990-831-2980x1497</td>
+            <td>mercedesaguirre@yahoo.com</td>
+            <td>Efectivo</td>
+            <td>679278</td>
+            <td>Verduras</td>
+            <td>43728</td>
+        </tr>
+    
+        <tr>
+            <td>31</td>
+            <td>Nicolás Saucedo</td>
+            <td>(474)002-7018</td>
+            <td>luis-migueljaime@holguin.com</td>
+            <td>Efectivo</td>
+            <td>600234</td>
+            <td>Verduras</td>
+            <td>5080</td>
+        </tr>
+    
+        <tr>
+            <td>32</td>
+            <td>Andrés Escobedo</td>
+            <td>636-877-0125x27607</td>
+            <td>veronica50@industrias.net</td>
+            <td>Sinpe Móvil</td>
+            <td>610377</td>
+            <td>Verduras</td>
+            <td>36239</td>
+        </tr>
+    
+        <tr>
+            <td>33</td>
+            <td>Asunción León Anguiano</td>
+            <td>+36(5)5033290425</td>
+            <td>bruno04@yahoo.com</td>
+            <td>Efectivo</td>
+            <td>711923</td>
+            <td>Leche</td>
+            <td>43333</td>
+        </tr>
+    
+        <tr>
+            <td>34</td>
+            <td>Anabel Zavala Canales</td>
+            <td>798-950-8574x6740</td>
+            <td>rnieves@club.com</td>
+            <td>Efectivo</td>
+            <td>264513</td>
+            <td>Frutas</td>
+            <td>19202</td>
+        </tr>
+    
+        <tr>
+            <td>35</td>
+            <td>Esparta Ibarra Suárez</td>
+            <td>(405)910-8405x521</td>
+            <td>soledad29@yahoo.com</td>
+            <td>Tarjeta</td>
+            <td>419986</td>
+            <td>Refresco</td>
+            <td>10609</td>
+        </tr>
+    
+        <tr>
+            <td>36</td>
+            <td>Lourdes Ángel Sanabria</td>
+            <td>1-087-180-5148x0070</td>
+            <td>miguel-angel57@club.biz</td>
+            <td>Sinpe Móvil</td>
+            <td>473243</td>
+            <td>Frutas</td>
+            <td>19550</td>
+        </tr>
+    
+        <tr>
+            <td>37</td>
+            <td>Eloisa Marcela Gamboa Jaime</td>
+            <td>604.038.6131x128</td>
+            <td>maria-del-carmenchapa@grijalva.biz</td>
+            <td>Efectivo</td>
+            <td>597495</td>
+            <td>Refresco</td>
+            <td>33078</td>
+        </tr>
+    
+        <tr>
+            <td>38</td>
+            <td>Julio César Isabel Beltrán Ortiz</td>
+            <td>628-454-9300x24952</td>
+            <td>tleyva@gmail.com</td>
+            <td>Tarjeta</td>
+            <td>329170</td>
+            <td>Detergente</td>
+            <td>12255</td>
+        </tr>
+    
+        <tr>
+            <td>39</td>
+            <td>Ing. Esteban Zedillo</td>
+            <td>129.566.8020</td>
+            <td>ycrespo@valenzuela.com</td>
+            <td>Efectivo</td>
+            <td>361116</td>
+            <td>Detergente</td>
+            <td>31375</td>
+        </tr>
+    
+        <tr>
+            <td>40</td>
+            <td>Maximiliano Adela Gamboa</td>
+            <td>+89(4)6252461662</td>
+            <td>jaramillosergio@velasco.com</td>
+            <td>Sinpe Móvil</td>
+            <td>163470</td>
+            <td>Huevos</td>
+            <td>32153</td>
+        </tr>
+    
+        <tr>
+            <td>41</td>
+            <td>Jonás Balderas Madrid</td>
+            <td>+86(7)9929583421</td>
+            <td>rodrigoharo@hinojosa-frias.com</td>
+            <td>Efectivo</td>
+            <td>549003</td>
+            <td>Huevos</td>
+            <td>11193</td>
+        </tr>
+    
+        <tr>
+            <td>42</td>
+            <td>Claudio Niño Pichardo</td>
+            <td>(645)567-4562x171</td>
+            <td>casaresabigail@yahoo.com</td>
+            <td>Tarjeta</td>
+            <td>682717</td>
+            <td>Detergente</td>
+            <td>47956</td>
+        </tr>
+    
+        <tr>
+            <td>43</td>
+            <td>Ing. María José Verduzco</td>
+            <td>(415)913-7243x52719</td>
+            <td>tafoyajulia@cedillo.biz</td>
+            <td>Efectivo</td>
+            <td>32752</td>
+            <td>Frutas</td>
+            <td>32531</td>
+        </tr>
+    
+        <tr>
+            <td>44</td>
+            <td>Luis Miguel Alarcón Guerra</td>
+            <td>433-353-0887x60965</td>
+            <td>jaquezleonor@club.com</td>
+            <td>Tarjeta</td>
+            <td>86158</td>
+            <td>Carne</td>
+            <td>20163</td>
+        </tr>
+    
+        <tr>
+            <td>45</td>
+            <td>Mtro. Pablo Zamora</td>
+            <td>06893348927</td>
+            <td>florencia09@gmail.com</td>
+            <td>Sinpe Móvil</td>
+            <td>221639</td>
+            <td>Huevos</td>
+            <td>24682</td>
+        </tr>
+    
+        <tr>
+            <td>46</td>
+            <td>Julia Yeni Galarza Mota</td>
+            <td>176.215.2001x872</td>
+            <td>tpulido@batista-fernandez.info</td>
+            <td>Tarjeta</td>
+            <td>290415</td>
+            <td>Carne</td>
+            <td>31824</td>
+        </tr>
+    
+        <tr>
+            <td>47</td>
+            <td>Dalia Colón Quintanilla</td>
+            <td>02134778879</td>
+            <td>veronica16@hotmail.com</td>
+            <td>Efectivo</td>
+            <td>714243</td>
+            <td>Refresco</td>
+            <td>23896</td>
+        </tr>
+    
+        <tr>
+            <td>48</td>
+            <td>Dr. Gerardo Caldera</td>
+            <td>837-144-0057x3073</td>
+            <td>micaelavalencia@gmail.com</td>
+            <td>Tarjeta</td>
+            <td>54216</td>
+            <td>Carne</td>
+            <td>33178</td>
+        </tr>
+    
+        <tr>
+            <td>49</td>
+            <td>Miguel Alvarez</td>
+            <td>541-058-3618</td>
+            <td>leonardo96@carmona-zamudio.com</td>
+            <td>Tarjeta</td>
+            <td>314186</td>
+            <td>Carne</td>
+            <td>16802</td>
+        </tr>
+    
+        <tr>
+            <td>50</td>
+            <td>Sessa Carlota Almanza Valles</td>
+            <td>842-886-1446x36522</td>
+            <td>georgina20@hotmail.com</td>
+            <td>Sinpe Móvil</td>
+            <td>205105</td>
+            <td>Refresco</td>
+            <td>25658</td>
+        </tr>
+    
+        </table>
+    </div>
+
+    <script>
+        function toggleModoOscuro() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>

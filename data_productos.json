@@ -1,0 +1,62 @@
+[
+  {
+    "codigo": "P100",
+    "nombre": "Arroz",
+    "precio": 687,
+    "stock": 160
+  },
+  {
+    "codigo": "P101",
+    "nombre": "Leche",
+    "precio": 2324,
+    "stock": 90
+  },
+  {
+    "codigo": "P102",
+    "nombre": "Huevos",
+    "precio": 2398,
+    "stock": 15
+  },
+  {
+    "codigo": "P103",
+    "nombre": "Pan",
+    "precio": 882,
+    "stock": 169
+  },
+  {
+    "codigo": "P104",
+    "nombre": "Frijoles",
+    "precio": 2525,
+    "stock": 19
+  },
+  {
+    "codigo": "P105",
+    "nombre": "Café",
+    "precio": 2862,
+    "stock": 23
+  },
+  {
+    "codigo": "P106",
+    "nombre": "Jugo",
+    "precio": 2066,
+    "stock": 65
+  },
+  {
+    "codigo": "P107",
+    "nombre": "Azúcar",
+    "precio": 1733,
+    "stock": 110
+  },
+  {
+    "codigo": "P108",
+    "nombre": "Aceite",
+    "precio": 2237,
+    "stock": 154
+  },
+  {
+    "codigo": "P109",
+    "nombre": "Queso",
+    "precio": 1867,
+    "stock": 119
+  }
+]

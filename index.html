@@ -1,28 +1,69 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM Prof. Paulo</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>CRM Prof. Paulo</title>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <h1>CRM Prof. Paulo</h1>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="navigate('clientes')">Clientes</a></li>
-                <li><a href="#" onclick="navigate('productos')">Productos</a></li>
-                <li><a href="#" onclick="navigate('facturas')">Facturas</a></li>
-                <li><a href="#" onclick="navigate('reportes')">Reportes</a></li>
-                <li><button onclick="toggleDarkMode()">Modo Oscuro</button></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="content">
-        <p>Bienvenido al CRM del Prof. Paulo. Seleccione una opción del menú.</p>
-    </main>
-    <script src="script.js"></script>
+<header class="topbar">
+  <div class="container">
+    <h1>CRM Prof. Paulo</h1>
+    <div class="controls">
+      <input id="searchInput" placeholder="Buscar clientes o productos..." />
+      <button id="darkToggle">🌙</button>
+      <button id="exportCSV">Exportar CSV</button>
+    </div>
+  </div>
+  <nav class="menu">
+    <button data-section="clientes" class="menu-btn active">Clientes</button>
+    <button data-section="facturas" class="menu-btn">Facturas</button>
+    <button data-section="productos" class="menu-btn">Productos</button>
+    <button data-section="reportes" class="menu-btn">Reportes</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section id="clientes" class="section active">
+    <h2>Clientes</h2>
+    <div class="kpis">
+      <div class="kpi"><strong id="totalClients">0</strong><span>Clientes</span></div>
+      <div class="kpi"><strong id="totalSpent">₡0</strong><span>Total gastado</span></div>
+    </div>
+    <table id="tableClientes" class="table">
+      <thead><tr><th>ID</th><th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Frecuencia</th><th>Tipo</th><th>Total gastado</th><th>Método</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="facturas" class="section">
+    <h2>Facturas</h2>
+    <table id="tableFacturas" class="table">
+      <thead><tr><th>Nº</th><th>Cliente</th><th>Fecha</th><th>Productos</th><th>Total</th><th>Método</th><th>Estado</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="productos" class="section">
+    <h2>Productos</h2>
+    <table id="tableProductos" class="table">
+      <thead><tr><th>Código</th><th>Nombre</th><th>Precio</th><th>Stock</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="reportes" class="section">
+    <h2>Reporte por producto</h2>
+    <canvas id="chartProducts" style="max-width:600px"></canvas>
+    <table id="tableReport" class="table">
+      <thead><tr><th>Producto</th><th>Unidades vendidas</th><th>Total vendido</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

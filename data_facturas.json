@@ -1,0 +1,1094 @@
+[
+  {
+    "numero": "F1000",
+    "cliente_id": 10,
+    "cliente": "Pedro Mora",
+    "fecha": "2025-07-18",
+    "productos": [
+      "Queso",
+      "Leche",
+      "Arroz"
+    ],
+    "total": 13260,
+    "estado": "Pendiente",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1001",
+    "cliente_id": 15,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-08-08",
+    "productos": [
+      "Frijoles",
+      "Café",
+      "Azúcar"
+    ],
+    "total": 18835,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1002",
+    "cliente_id": 48,
+    "cliente": "Sofía Rojas",
+    "fecha": "2025-12-11",
+    "productos": [
+      "Arroz",
+      "Huevos",
+      "Aceite",
+      "Café"
+    ],
+    "total": 18141,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1003",
+    "cliente_id": 1,
+    "cliente": "Natalia Salazar",
+    "fecha": "2025-11-10",
+    "productos": [
+      "Jugo",
+      "Aceite",
+      "Azúcar",
+      "Arroz"
+    ],
+    "total": 15329,
+    "estado": "Pagado",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1004",
+    "cliente_id": 21,
+    "cliente": "Luis Gómez",
+    "fecha": "2025-08-27",
+    "productos": [
+      "Pan",
+      "Jugo",
+      "Arroz"
+    ],
+    "total": 8839,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1005",
+    "cliente_id": 26,
+    "cliente": "Sofía Rodríguez",
+    "fecha": "2025-06-18",
+    "productos": [
+      "Huevos"
+    ],
+    "total": 2398,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1006",
+    "cliente_id": 24,
+    "cliente": "Sofía Jiménez",
+    "fecha": "2025-10-12",
+    "productos": [
+      "Arroz"
+    ],
+    "total": 2061,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1007",
+    "cliente_id": 41,
+    "cliente": "Laura Fernández",
+    "fecha": "2025-10-18",
+    "productos": [
+      "Huevos",
+      "Queso",
+      "Arroz"
+    ],
+    "total": 12989,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1008",
+    "cliente_id": 46,
+    "cliente": "Daniel Fernández",
+    "fecha": "2025-04-01",
+    "productos": [
+      "Café",
+      "Azúcar",
+      "Huevos"
+    ],
+    "total": 17513,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1009",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-03-11",
+    "productos": [
+      "Huevos",
+      "Leche",
+      "Queso",
+      "Arroz"
+    ],
+    "total": 17563,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1010",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-05-15",
+    "productos": [
+      "Queso",
+      "Pan",
+      "Arroz"
+    ],
+    "total": 5692,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1011",
+    "cliente_id": 15,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-09-19",
+    "productos": [
+      "Jugo"
+    ],
+    "total": 4132,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1012",
+    "cliente_id": 46,
+    "cliente": "Daniel Fernández",
+    "fecha": "2025-12-03",
+    "productos": [
+      "Azúcar",
+      "Frijoles",
+      "Café",
+      "Arroz"
+    ],
+    "total": 19268,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1013",
+    "cliente_id": 31,
+    "cliente": "Isabel Castillo",
+    "fecha": "2025-04-26",
+    "productos": [
+      "Café",
+      "Azúcar",
+      "Huevos",
+      "Arroz"
+    ],
+    "total": 14778,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1014",
+    "cliente_id": 49,
+    "cliente": "Miguel Gómez",
+    "fecha": "2025-10-24",
+    "productos": [
+      "Aceite"
+    ],
+    "total": 4474,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1015",
+    "cliente_id": 9,
+    "cliente": "José Jiménez",
+    "fecha": "2025-01-03",
+    "productos": [
+      "Frijoles",
+      "Jugo",
+      "Café",
+      "Huevos"
+    ],
+    "total": 21768,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1016",
+    "cliente_id": 11,
+    "cliente": "Lucía Mora",
+    "fecha": "2025-10-11",
+    "productos": [
+      "Huevos",
+      "Café",
+      "Pan"
+    ],
+    "total": 11866,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1017",
+    "cliente_id": 12,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-09-22",
+    "productos": [
+      "Pan",
+      "Café"
+    ],
+    "total": 3744,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1018",
+    "cliente_id": 31,
+    "cliente": "Isabel Castillo",
+    "fecha": "2025-02-19",
+    "productos": [
+      "Huevos",
+      "Frijoles",
+      "Azúcar"
+    ],
+    "total": 10122,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1019",
+    "cliente_id": 11,
+    "cliente": "Lucía Mora",
+    "fecha": "2025-09-17",
+    "productos": [
+      "Huevos",
+      "Frijoles"
+    ],
+    "total": 4923,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1020",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-06-28",
+    "productos": [
+      "Azúcar",
+      "Frijoles",
+      "Arroz",
+      "Leche"
+    ],
+    "total": 16376,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1021",
+    "cliente_id": 44,
+    "cliente": "Carlos Rojas",
+    "fecha": "2025-07-10",
+    "productos": [
+      "Jugo",
+      "Huevos",
+      "Arroz"
+    ],
+    "total": 8923,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1022",
+    "cliente_id": 4,
+    "cliente": "María Gómez",
+    "fecha": "2025-11-08",
+    "productos": [
+      "Café"
+    ],
+    "total": 5724,
+    "estado": "Pagado",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1023",
+    "cliente_id": 17,
+    "cliente": "Camila Rodríguez",
+    "fecha": "2025-02-21",
+    "productos": [
+      "Arroz"
+    ],
+    "total": 687,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1024",
+    "cliente_id": 42,
+    "cliente": "Sofía Jiménez",
+    "fecha": "2025-07-16",
+    "productos": [
+      "Café"
+    ],
+    "total": 5724,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1025",
+    "cliente_id": 23,
+    "cliente": "Natalia Castillo",
+    "fecha": "2025-12-13",
+    "productos": [
+      "Café",
+      "Pan"
+    ],
+    "total": 11232,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1026",
+    "cliente_id": 3,
+    "cliente": "Natalia Ramírez",
+    "fecha": "2025-09-25",
+    "productos": [
+      "Leche",
+      "Café",
+      "Aceite",
+      "Frijoles"
+    ],
+    "total": 17909,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1027",
+    "cliente_id": 34,
+    "cliente": "Laura Mora",
+    "fecha": "2025-03-18",
+    "productos": [
+      "Queso",
+      "Huevos"
+    ],
+    "total": 10928,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1028",
+    "cliente_id": 18,
+    "cliente": "Andrés Vargas",
+    "fecha": "2025-09-09",
+    "productos": [
+      "Frijoles",
+      "Huevos",
+      "Azúcar",
+      "Aceite"
+    ],
+    "total": 15422,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1029",
+    "cliente_id": 43,
+    "cliente": "Isabel Rodríguez",
+    "fecha": "2025-01-05",
+    "productos": [
+      "Queso",
+      "Azúcar"
+    ],
+    "total": 3600,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1030",
+    "cliente_id": 18,
+    "cliente": "Andrés Vargas",
+    "fecha": "2025-02-14",
+    "productos": [
+      "Azúcar",
+      "Café",
+      "Aceite",
+      "Leche"
+    ],
+    "total": 13717,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1031",
+    "cliente_id": 32,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-02-18",
+    "productos": [
+      "Café"
+    ],
+    "total": 8586,
+    "estado": "Pendiente",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1032",
+    "cliente_id": 49,
+    "cliente": "Miguel Gómez",
+    "fecha": "2025-09-07",
+    "productos": [
+      "Café",
+      "Azúcar",
+      "Arroz",
+      "Huevos"
+    ],
+    "total": 17316,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1033",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-08-07",
+    "productos": [
+      "Leche"
+    ],
+    "total": 2324,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1034",
+    "cliente_id": 19,
+    "cliente": "Miguel Jiménez",
+    "fecha": "2025-10-28",
+    "productos": [
+      "Huevos"
+    ],
+    "total": 7194,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1035",
+    "cliente_id": 14,
+    "cliente": "Luis Jiménez",
+    "fecha": "2025-11-27",
+    "productos": [
+      "Pan",
+      "Queso",
+      "Azúcar"
+    ],
+    "total": 5364,
+    "estado": "Pagado",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1036",
+    "cliente_id": 8,
+    "cliente": "Natalia Castillo",
+    "fecha": "2025-03-28",
+    "productos": [
+      "Huevos",
+      "Aceite",
+      "Leche",
+      "Queso"
+    ],
+    "total": 17652,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1037",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-12-22",
+    "productos": [
+      "Queso",
+      "Jugo",
+      "Leche",
+      "Pan"
+    ],
+    "total": 15359,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1038",
+    "cliente_id": 23,
+    "cliente": "Natalia Castillo",
+    "fecha": "2025-07-08",
+    "productos": [
+      "Azúcar",
+      "Aceite",
+      "Queso"
+    ],
+    "total": 11540,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1039",
+    "cliente_id": 14,
+    "cliente": "Luis Jiménez",
+    "fecha": "2025-11-05",
+    "productos": [
+      "Aceite",
+      "Huevos"
+    ],
+    "total": 9270,
+    "estado": "Pendiente",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1040",
+    "cliente_id": 39,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-11-26",
+    "productos": [
+      "Frijoles",
+      "Azúcar",
+      "Pan",
+      "Aceite"
+    ],
+    "total": 17783,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1041",
+    "cliente_id": 32,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-01-23",
+    "productos": [
+      "Azúcar",
+      "Jugo",
+      "Café"
+    ],
+    "total": 8727,
+    "estado": "Pagado",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1042",
+    "cliente_id": 30,
+    "cliente": "Ana Jiménez",
+    "fecha": "2025-05-19",
+    "productos": [
+      "Huevos"
+    ],
+    "total": 7194,
+    "estado": "Pendiente",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1043",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-01-14",
+    "productos": [
+      "Arroz",
+      "Leche"
+    ],
+    "total": 3011,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1044",
+    "cliente_id": 49,
+    "cliente": "Miguel Gómez",
+    "fecha": "2025-09-01",
+    "productos": [
+      "Aceite",
+      "Frijoles",
+      "Azúcar"
+    ],
+    "total": 12198,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1045",
+    "cliente_id": 17,
+    "cliente": "Camila Rodríguez",
+    "fecha": "2025-06-19",
+    "productos": [
+      "Pan"
+    ],
+    "total": 882,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1046",
+    "cliente_id": 44,
+    "cliente": "Carlos Rojas",
+    "fecha": "2025-03-24",
+    "productos": [
+      "Café",
+      "Frijoles",
+      "Arroz",
+      "Pan"
+    ],
+    "total": 8720,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1047",
+    "cliente_id": 8,
+    "cliente": "Natalia Castillo",
+    "fecha": "2025-11-06",
+    "productos": [
+      "Jugo",
+      "Huevos",
+      "Azúcar",
+      "Frijoles"
+    ],
+    "total": 18718,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1048",
+    "cliente_id": 12,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-08-22",
+    "productos": [
+      "Aceite",
+      "Azúcar"
+    ],
+    "total": 9673,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1049",
+    "cliente_id": 29,
+    "cliente": "Luis Jiménez",
+    "fecha": "2025-11-02",
+    "productos": [
+      "Azúcar"
+    ],
+    "total": 5199,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1050",
+    "cliente_id": 13,
+    "cliente": "Miguel Ramírez",
+    "fecha": "2025-10-21",
+    "productos": [
+      "Azúcar",
+      "Arroz",
+      "Jugo"
+    ],
+    "total": 11038,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1051",
+    "cliente_id": 46,
+    "cliente": "Daniel Fernández",
+    "fecha": "2025-01-27",
+    "productos": [
+      "Jugo"
+    ],
+    "total": 4132,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1052",
+    "cliente_id": 25,
+    "cliente": "Isabel Vargas",
+    "fecha": "2025-07-03",
+    "productos": [
+      "Frijoles",
+      "Leche"
+    ],
+    "total": 9899,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1053",
+    "cliente_id": 48,
+    "cliente": "Sofía Rojas",
+    "fecha": "2025-04-27",
+    "productos": [
+      "Azúcar",
+      "Aceite",
+      "Arroz",
+      "Leche"
+    ],
+    "total": 16790,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1054",
+    "cliente_id": 34,
+    "cliente": "Laura Mora",
+    "fecha": "2025-04-12",
+    "productos": [
+      "Leche",
+      "Pan",
+      "Jugo"
+    ],
+    "total": 9920,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1055",
+    "cliente_id": 45,
+    "cliente": "Andrés Fernández",
+    "fecha": "2025-10-19",
+    "productos": [
+      "Café",
+      "Queso",
+      "Leche",
+      "Jugo"
+    ],
+    "total": 13310,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1056",
+    "cliente_id": 32,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-01-21",
+    "productos": [
+      "Azúcar",
+      "Aceite"
+    ],
+    "total": 8444,
+    "estado": "Pendiente",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1057",
+    "cliente_id": 36,
+    "cliente": "Valentina Ramírez",
+    "fecha": "2025-12-22",
+    "productos": [
+      "Frijoles",
+      "Queso",
+      "Arroz",
+      "Aceite"
+    ],
+    "total": 18707,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1058",
+    "cliente_id": 12,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-10-26",
+    "productos": [
+      "Aceite",
+      "Leche",
+      "Frijoles"
+    ],
+    "total": 16496,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1059",
+    "cliente_id": 15,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-07-17",
+    "productos": [
+      "Frijoles",
+      "Jugo",
+      "Café",
+      "Queso"
+    ],
+    "total": 19298,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1060",
+    "cliente_id": 34,
+    "cliente": "Laura Mora",
+    "fecha": "2025-07-11",
+    "productos": [
+      "Queso",
+      "Café",
+      "Aceite",
+      "Pan"
+    ],
+    "total": 17820,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1061",
+    "cliente_id": 2,
+    "cliente": "Miguel Castillo",
+    "fecha": "2025-11-15",
+    "productos": [
+      "Frijoles"
+    ],
+    "total": 7575,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1062",
+    "cliente_id": 38,
+    "cliente": "Gabriela Ramírez",
+    "fecha": "2025-04-08",
+    "productos": [
+      "Pan",
+      "Queso",
+      "Arroz"
+    ],
+    "total": 7559,
+    "estado": "Pagado",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1063",
+    "cliente_id": 46,
+    "cliente": "Daniel Fernández",
+    "fecha": "2025-08-18",
+    "productos": [
+      "Leche",
+      "Frijoles",
+      "Aceite"
+    ],
+    "total": 16697,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1064",
+    "cliente_id": 7,
+    "cliente": "José Gómez",
+    "fecha": "2025-09-10",
+    "productos": [
+      "Azúcar",
+      "Pan",
+      "Arroz",
+      "Aceite"
+    ],
+    "total": 12269,
+    "estado": "Pendiente",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1065",
+    "cliente_id": 36,
+    "cliente": "Valentina Ramírez",
+    "fecha": "2025-06-18",
+    "productos": [
+      "Queso"
+    ],
+    "total": 1867,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1066",
+    "cliente_id": 6,
+    "cliente": "Ana Fernández",
+    "fecha": "2025-11-25",
+    "productos": [
+      "Huevos",
+      "Azúcar",
+      "Aceite"
+    ],
+    "total": 16706,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1067",
+    "cliente_id": 38,
+    "cliente": "Gabriela Ramírez",
+    "fecha": "2025-05-17",
+    "productos": [
+      "Aceite",
+      "Pan",
+      "Frijoles",
+      "Jugo"
+    ],
+    "total": 13777,
+    "estado": "Pagado",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "numero": "F1068",
+    "cliente_id": 12,
+    "cliente": "Natalia Rojas",
+    "fecha": "2025-02-07",
+    "productos": [
+      "Huevos"
+    ],
+    "total": 7194,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1069",
+    "cliente_id": 40,
+    "cliente": "Lucía Jiménez",
+    "fecha": "2025-07-18",
+    "productos": [
+      "Jugo",
+      "Huevos",
+      "Frijoles"
+    ],
+    "total": 14437,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1070",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-06-25",
+    "productos": [
+      "Pan",
+      "Queso"
+    ],
+    "total": 2749,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1071",
+    "cliente_id": 18,
+    "cliente": "Andrés Vargas",
+    "fecha": "2025-04-27",
+    "productos": [
+      "Café",
+      "Jugo",
+      "Arroz"
+    ],
+    "total": 7681,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1072",
+    "cliente_id": 18,
+    "cliente": "Andrés Vargas",
+    "fecha": "2025-01-06",
+    "productos": [
+      "Jugo",
+      "Leche"
+    ],
+    "total": 6714,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1073",
+    "cliente_id": 26,
+    "cliente": "Sofía Rodríguez",
+    "fecha": "2025-03-24",
+    "productos": [
+      "Queso"
+    ],
+    "total": 3734,
+    "estado": "Pagado",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1074",
+    "cliente_id": 33,
+    "cliente": "Natalia Vargas",
+    "fecha": "2025-11-02",
+    "productos": [
+      "Pan"
+    ],
+    "total": 2646,
+    "estado": "Pagado",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1075",
+    "cliente_id": 40,
+    "cliente": "Lucía Jiménez",
+    "fecha": "2025-08-22",
+    "productos": [
+      "Café",
+      "Frijoles",
+      "Azúcar",
+      "Arroz"
+    ],
+    "total": 15172,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1076",
+    "cliente_id": 8,
+    "cliente": "Natalia Castillo",
+    "fecha": "2025-10-20",
+    "productos": [
+      "Huevos",
+      "Pan",
+      "Queso"
+    ],
+    "total": 11810,
+    "estado": "Pendiente",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "numero": "F1077",
+    "cliente_id": 42,
+    "cliente": "Sofía Jiménez",
+    "fecha": "2025-12-07",
+    "productos": [
+      "Café",
+      "Queso",
+      "Huevos"
+    ],
+    "total": 8994,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  },
+  {
+    "numero": "F1078",
+    "cliente_id": 24,
+    "cliente": "Sofía Jiménez",
+    "fecha": "2025-09-23",
+    "productos": [
+      "Pan"
+    ],
+    "total": 2646,
+    "estado": "Pagado",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "numero": "F1079",
+    "cliente_id": 20,
+    "cliente": "Felipe Jiménez",
+    "fecha": "2025-04-23",
+    "productos": [
+      "Leche",
+      "Frijoles",
+      "Queso"
+    ],
+    "total": 15098,
+    "estado": "Pendiente",
+    "metodo_pago": "Sinpe Móvil"
+  }
+]

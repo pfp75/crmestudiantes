@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,32 +11,18 @@
     <header>
         <h1>CRM Prof. Paulo</h1>
         <nav>
-            <button onclick="mostrarSeccion('clientes')">Clientes</button>
-            <button onclick="mostrarSeccion('facturas')">Facturas</button>
-            <button onclick="mostrarSeccion('productos')">Productos</button>
-            <button onclick="mostrarSeccion('reportes')">Reportes</button>
-            <button id="modoOscuroBtn">Modo Oscuro</button>
+            <ul>
+                <li><a href="#" onclick="navigate('clientes')">Clientes</a></li>
+                <li><a href="#" onclick="navigate('productos')">Productos</a></li>
+                <li><a href="#" onclick="navigate('facturas')">Facturas</a></li>
+                <li><a href="#" onclick="navigate('reportes')">Reportes</a></li>
+                <li><button onclick="toggleDarkMode()">Modo Oscuro</button></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section id="clientes" class="seccion">
-            <h2>Clientes</h2>
-            <div id="tablaClientes"></div>
-        </section>
-        <section id="facturas" class="seccion" style="display:none;">
-            <h2>Facturas</h2>
-            <div id="tablaFacturas"></div>
-        </section>
-        <section id="productos" class="seccion" style="display:none;">
-            <h2>Productos</h2>
-            <div id="tablaProductos"></div>
-        </section>
-        <section id="reportes" class="seccion" style="display:none;">
-            <h2>Reportes por producto</h2>
-            <canvas id="graficoProductos"></canvas>
-        </section>
+    <main id="content">
+        <p>Bienvenido al CRM del Prof. Paulo. Seleccione una opción del menú.</p>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

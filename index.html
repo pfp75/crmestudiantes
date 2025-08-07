@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM Supermercado</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">CRM Supermercado</div>
-            <ul class="nav-links">
-                <li><a href="#" onclick="showSection('clientes')">Clientes</a></li>
-                <li><a href="#" onclick="showSection('ventas')">Ventas</a></li>
-                <li><a href="#" onclick="showSection('productos')">Productos</a></li>
-                <li><a href="#" onclick="showSection('estadisticas')">Estadísticas</a></li>
-                <li><button id="dark-mode-toggle">Modo Oscuro</button></li>
+        <nav class="menu-superior">
+            <ul>
+                <li><button onclick="mostrarSeccion('clientes')">Clientes</button></li>
+                <li><button onclick="mostrarSeccion('facturas')">Facturas</button></li>
+                <li><button onclick="mostrarSeccion('productos')">Productos</button></li>
+                <li><button onclick="mostrarSeccion('reportes')">Reportes</button></li>
+                <li><button onclick="toggleModoOscuro()">🌓</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="clientes" class="section active">
-            <h2>Listado de Clientes</h2>
-            <div id="clientes-container"></div>
+        <section id="clientes" class="seccion">
+            <h2>Clientes</h2>
+            <div id="lista-clientes"></div>
         </section>
-        <section id="ventas" class="section">
-            <h2>Ventas</h2>
-            <p>Aquí irán los datos de ventas.</p>
+        <section id="facturas" class="seccion oculto">
+            <h2>Facturas</h2>
+            <div id="lista-facturas"></div>
         </section>
-        <section id="productos" class="section">
+        <section id="productos" class="seccion oculto">
             <h2>Productos</h2>
-            <p>Listado de productos del supermercado.</p>
+            <div id="lista-productos"></div>
         </section>
-        <section id="estadisticas" class="section">
-            <h2>Estadísticas</h2>
-            <p>Gráficos y estadísticas.</p>
+        <section id="reportes" class="seccion oculto">
+            <h2>Reportes</h2>
+            <div id="lista-reportes">
+                <p>Total de clientes: 50</p>
+                <p>Total de facturas: 120</p>
+                <p>Producto más vendido: Leche</p>
+            </div>
         </section>
     </main>
 

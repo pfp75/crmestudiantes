@@ -1,13 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRM Prof. Paulo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Prof. Paulo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>CRM Prof. Paulo</h1>
-  <p>Esta es una versión de ejemplo para empaquetar.</p>
+    <header>
+        <h1>CRM Prof. Paulo</h1>
+        <nav>
+            <button onclick="mostrarSeccion('clientes')">Clientes</button>
+            <button onclick="mostrarSeccion('facturas')">Facturas</button>
+            <button onclick="mostrarSeccion('productos')">Productos</button>
+            <button onclick="mostrarSeccion('reportes')">Reportes</button>
+            <button id="modoOscuroBtn">Modo Oscuro</button>
+        </nav>
+    </header>
+    <main>
+        <section id="clientes" class="seccion">
+            <h2>Clientes</h2>
+            <div id="tablaClientes"></div>
+        </section>
+        <section id="facturas" class="seccion" style="display:none;">
+            <h2>Facturas</h2>
+            <div id="tablaFacturas"></div>
+        </section>
+        <section id="productos" class="seccion" style="display:none;">
+            <h2>Productos</h2>
+            <div id="tablaProductos"></div>
+        </section>
+        <section id="reportes" class="seccion" style="display:none;">
+            <h2>Reportes por producto</h2>
+            <canvas id="graficoProductos"></canvas>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

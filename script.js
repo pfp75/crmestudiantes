@@ -1,53 +1,74 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    mostrarClientes();
-
-    // Al iniciar, mostrar sección de clientes
-    mostrarSeccion('clientes');
-});
+const secciones = document.querySelectorAll('.seccion');
 
 function mostrarSeccion(id) {
-    const secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(s => s.classList.add('oculto'));
-    document.getElementById(id).classList.remove('oculto');
-
-    if (id === 'clientes') mostrarClientes();
-    if (id === 'facturas') mostrarFacturas();
-    if (id === 'productos') mostrarProductos();
+    secciones.forEach(sec => {
+        sec.style.display = (sec.id === id) ? 'block' : 'none';
+    });
 }
 
-function toggleModoOscuro() {
-    document.body.classList.toggle('modo-oscuro');
+document.getElementById('modoOscuroBtn').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Datos ficticios
+const clientes = Array.from({length: 50}, (_, i) => ({
+    nombre: `Cliente ${i+1}`,
+    metodoPago: ['Efectivo', 'Tarjeta', 'Transferencia'][i % 3]
+}));
+
+const productos = ['Arroz', 'Frijoles', 'Leche', 'Pan', 'Huevos', 'Café'];
+const facturas = clientes.map((cliente, i) => ({
+    numero: 1000 + i,
+    cliente: cliente.nombre,
+    metodoPago: cliente.metodoPago,
+    producto: productos[i % productos.length],
+    cantidad: Math.floor(Math.random() * 5) + 1
+}));
+
+function cargarClientes() {
+    const div = document.getElementById('tablaClientes');
+    div.innerHTML = '<table><tr><th>Nombre</th><th>Método de Pago</th></tr>' +
+        clientes.map(c => `<tr><td>${c.nombre}</td><td>${c.metodoPago}</td></tr>`).join('') +
+        '</table>';
 }
 
-function mostrarClientes() {
-    const clientes = Array.from({ length: 50 }, (_, i) => ({
-        nombre: `Cliente ${i + 1}`,
-        telefono: `8888-00${i}`,
-        correo: `cliente${i + 1}@correo.com`
-    }));
-    const contenedor = document.getElementById('lista-clientes');
-    contenedor.innerHTML = clientes.map(c => `
-        <div><strong>${c.nombre}</strong> - ${c.telefono} - ${c.correo}</div>
-    `).join('');
+function cargarFacturas() {
+    const div = document.getElementById('tablaFacturas');
+    div.innerHTML = '<table><tr><th># Factura</th><th>Cliente</th><th>Método de Pago</th><th>Producto</th><th>Cantidad</th></tr>' +
+        facturas.map(f => `<tr><td>${f.numero}</td><td>${f.cliente}</td><td>${f.metodoPago}</td><td>${f.producto}</td><td>${f.cantidad}</td></tr>`).join('') +
+        '</table>';
 }
 
-function mostrarFacturas() {
-    const facturas = Array.from({ length: 20 }, (_, i) => ({
-        numero: 1000 + i,
-        cliente: `Cliente ${i + 1}`,
-        metodo: ['Efectivo', 'Tarjeta', 'Transferencia'][i % 3]
-    }));
-    const contenedor = document.getElementById('lista-facturas');
-    contenedor.innerHTML = facturas.map(f => `
-        <div><strong>Factura #${f.numero}</strong> - Cliente: ${f.cliente} - Pago: ${f.metodo}</div>
-    `).join('');
+function cargarProductos() {
+    const div = document.getElementById('tablaProductos');
+    div.innerHTML = '<ul>' +
+        productos.map(p => `<li>${p}</li>`).join('') +
+        '</ul>';
 }
 
-function mostrarProductos() {
-    const productos = ['Arroz', 'Frijoles', 'Leche', 'Pan', 'Jugo'];
-    const contenedor = document.getElementById('lista-productos');
-    contenedor.innerHTML = productos.map(p => `
-        <div><strong>Producto:</strong> ${p}</div>
-    `).join('');
+function cargarReportes() {
+    const ctx = document.getElementById('graficoProductos').getContext('2d');
+    const conteo = {};
+    facturas.forEach(f => {
+        conteo[f.producto] = (conteo[f.producto] || 0) + f.cantidad;
+    });
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: Object.keys(conteo),
+            datasets: [{
+                label: 'Productos vendidos',
+                data: Object.values(conteo)
+            }]
+        }
+    });
 }
+
+window.onload = function() {
+    cargarClientes();
+    cargarFacturas();
+    cargarProductos();
+    cargarReportes();
+};

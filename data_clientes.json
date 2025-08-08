@@ -1,502 +1,552 @@
 [
   {
     "id": 1,
-    "nombre": "Natalia Salazar",
+    "nombre": "Laura Jiménez",
     "correo": "cliente1@ejemplo.com",
     "telefono": "8888-1000",
-    "frecuencia": "Semanal",
-    "tipo": "VIP",
-    "total_gastado": 135130,
-    "metodo_pago": "Tarjeta"
+    "frecuencia": "Ocasional",
+    "tipo": "Nuevo",
+    "total_gastado": 11801,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 2,
-    "nombre": "Miguel Castillo",
+    "nombre": "Felipe Salazar",
     "correo": "cliente2@ejemplo.com",
     "telefono": "8888-1001",
-    "frecuencia": "Ocasional",
-    "tipo": "Inactivo",
-    "total_gastado": 91965,
-    "metodo_pago": "Efectivo"
+    "frecuencia": "Mensual",
+    "tipo": "Frecuente",
+    "total_gastado": 123676,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Moravia"
   },
   {
     "id": 3,
-    "nombre": "Natalia Ramírez",
+    "nombre": "Sofía Vargas",
     "correo": "cliente3@ejemplo.com",
     "telefono": "8888-1002",
-    "frecuencia": "Quincenal",
+    "frecuencia": "Semanal",
     "tipo": "Frecuente",
-    "total_gastado": 123433,
-    "metodo_pago": "Transferencia"
+    "total_gastado": 140136,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 4,
-    "nombre": "María Gómez",
+    "nombre": "Miguel Jiménez",
     "correo": "cliente4@ejemplo.com",
     "telefono": "8888-1003",
-    "frecuencia": "Mensual",
-    "tipo": "Nuevo",
-    "total_gastado": 192945,
-    "metodo_pago": "Tarjeta"
+    "frecuencia": "Quincenal",
+    "tipo": "VIP",
+    "total_gastado": 181346,
+    "metodo_pago": "Transferencia",
+    "sucursal": "San Pedro"
   },
   {
     "id": 5,
-    "nombre": "José Castillo",
+    "nombre": "Ana Fernández",
     "correo": "cliente5@ejemplo.com",
     "telefono": "8888-1004",
-    "frecuencia": "Quincenal",
-    "tipo": "VIP",
-    "total_gastado": 12252,
-    "metodo_pago": "Transferencia"
+    "frecuencia": "Mensual",
+    "tipo": "Inactivo",
+    "total_gastado": 184458,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Zapote"
   },
   {
     "id": 6,
-    "nombre": "Ana Fernández",
+    "nombre": "Pedro Mora",
     "correo": "cliente6@ejemplo.com",
     "telefono": "8888-1005",
-    "frecuencia": "Ocasional",
-    "tipo": "Inactivo",
-    "total_gastado": 137153,
-    "metodo_pago": "Efectivo"
+    "frecuencia": "Semanal",
+    "tipo": "Frecuente",
+    "total_gastado": 44024,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 7,
-    "nombre": "José Gómez",
+    "nombre": "Pedro Fernández",
     "correo": "cliente7@ejemplo.com",
     "telefono": "8888-1006",
     "frecuencia": "Mensual",
-    "tipo": "Frecuente",
-    "total_gastado": 84617,
-    "metodo_pago": "Efectivo"
+    "tipo": "VIP",
+    "total_gastado": 11277,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 8,
-    "nombre": "Natalia Castillo",
+    "nombre": "Lucía Rodríguez",
     "correo": "cliente8@ejemplo.com",
     "telefono": "8888-1007",
-    "frecuencia": "Mensual",
+    "frecuencia": "Quincenal",
     "tipo": "Nuevo",
-    "total_gastado": 193669,
-    "metodo_pago": "Transferencia"
+    "total_gastado": 153489,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Moravia"
   },
   {
     "id": 9,
-    "nombre": "José Jiménez",
+    "nombre": "Martín Gómez",
     "correo": "cliente9@ejemplo.com",
     "telefono": "8888-1008",
     "frecuencia": "Mensual",
     "tipo": "Frecuente",
-    "total_gastado": 40125,
-    "metodo_pago": "Sinpe Móvil"
+    "total_gastado": 62291,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Desamparados"
   },
   {
     "id": 10,
-    "nombre": "Pedro Mora",
+    "nombre": "Miguel Jiménez",
     "correo": "cliente10@ejemplo.com",
     "telefono": "8888-1009",
-    "frecuencia": "Quincenal",
-    "tipo": "VIP",
-    "total_gastado": 143801,
-    "metodo_pago": "Tarjeta"
+    "frecuencia": "Mensual",
+    "tipo": "Inactivo",
+    "total_gastado": 126011,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Moravia"
   },
   {
     "id": 11,
-    "nombre": "Lucía Mora",
+    "nombre": "Sofía Ramírez",
     "correo": "cliente11@ejemplo.com",
     "telefono": "8888-1010",
-    "frecuencia": "Mensual",
+    "frecuencia": "Quincenal",
     "tipo": "Frecuente",
-    "total_gastado": 40011,
-    "metodo_pago": "Sinpe Móvil"
+    "total_gastado": 86816,
+    "metodo_pago": "Transferencia",
+    "sucursal": "San Pedro"
   },
   {
     "id": 12,
-    "nombre": "Natalia Rojas",
+    "nombre": "Lucía Castillo",
     "correo": "cliente12@ejemplo.com",
     "telefono": "8888-1011",
     "frecuencia": "Semanal",
-    "tipo": "Nuevo",
-    "total_gastado": 85599,
-    "metodo_pago": "Transferencia"
+    "tipo": "Inactivo",
+    "total_gastado": 27530,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Moravia"
   },
   {
     "id": 13,
-    "nombre": "Miguel Ramírez",
+    "nombre": "Felipe Castillo",
     "correo": "cliente13@ejemplo.com",
     "telefono": "8888-1012",
-    "frecuencia": "Quincenal",
+    "frecuencia": "Mensual",
     "tipo": "Frecuente",
-    "total_gastado": 148771,
-    "metodo_pago": "Sinpe Móvil"
+    "total_gastado": 145701,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 14,
-    "nombre": "Luis Jiménez",
+    "nombre": "Felipe Fernández",
     "correo": "cliente14@ejemplo.com",
     "telefono": "8888-1013",
-    "frecuencia": "Ocasional",
-    "tipo": "Nuevo",
-    "total_gastado": 89258,
-    "metodo_pago": "Tarjeta"
+    "frecuencia": "Quincenal",
+    "tipo": "Frecuente",
+    "total_gastado": 179420,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Desamparados"
   },
   {
     "id": 15,
-    "nombre": "Natalia Rojas",
+    "nombre": "María Rodríguez",
     "correo": "cliente15@ejemplo.com",
     "telefono": "8888-1014",
-    "frecuencia": "Ocasional",
+    "frecuencia": "Semanal",
     "tipo": "Inactivo",
-    "total_gastado": 59895,
-    "metodo_pago": "Transferencia"
+    "total_gastado": 57176,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "San Pedro"
   },
   {
     "id": 16,
-    "nombre": "Gabriela Mora",
+    "nombre": "Luis Vargas",
     "correo": "cliente16@ejemplo.com",
     "telefono": "8888-1015",
-    "frecuencia": "Ocasional",
-    "tipo": "Inactivo",
-    "total_gastado": 149610,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Semanal",
+    "tipo": "Nuevo",
+    "total_gastado": 162707,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Desamparados"
   },
   {
     "id": 17,
-    "nombre": "Camila Rodríguez",
+    "nombre": "David Rojas",
     "correo": "cliente17@ejemplo.com",
     "telefono": "8888-1016",
-    "frecuencia": "Mensual",
+    "frecuencia": "Ocasional",
     "tipo": "Frecuente",
-    "total_gastado": 14401,
-    "metodo_pago": "Transferencia"
+    "total_gastado": 116469,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Desamparados"
   },
   {
     "id": 18,
-    "nombre": "Andrés Vargas",
+    "nombre": "Miguel Castillo",
     "correo": "cliente18@ejemplo.com",
     "telefono": "8888-1017",
-    "frecuencia": "Semanal",
-    "tipo": "Frecuente",
-    "total_gastado": 84815,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Mensual",
+    "tipo": "Inactivo",
+    "total_gastado": 72744,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Moravia"
   },
   {
     "id": 19,
-    "nombre": "Miguel Jiménez",
+    "nombre": "Ana Vargas",
     "correo": "cliente19@ejemplo.com",
     "telefono": "8888-1018",
     "frecuencia": "Ocasional",
-    "tipo": "Frecuente",
-    "total_gastado": 183351,
-    "metodo_pago": "Transferencia"
+    "tipo": "VIP",
+    "total_gastado": 34549,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Zapote"
   },
   {
     "id": 20,
-    "nombre": "Felipe Jiménez",
+    "nombre": "Valentina Mora",
     "correo": "cliente20@ejemplo.com",
     "telefono": "8888-1019",
     "frecuencia": "Mensual",
-    "tipo": "VIP",
-    "total_gastado": 88273,
-    "metodo_pago": "Sinpe Móvil"
+    "tipo": "Nuevo",
+    "total_gastado": 91015,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Moravia"
   },
   {
     "id": 21,
-    "nombre": "Luis Gómez",
+    "nombre": "Daniel Vargas",
     "correo": "cliente21@ejemplo.com",
     "telefono": "8888-1020",
     "frecuencia": "Ocasional",
-    "tipo": "VIP",
-    "total_gastado": 65353,
-    "metodo_pago": "Efectivo"
+    "tipo": "Nuevo",
+    "total_gastado": 134769,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Moravia"
   },
   {
     "id": 22,
-    "nombre": "Andrés Jiménez",
+    "nombre": "Isabel Fernández",
     "correo": "cliente22@ejemplo.com",
     "telefono": "8888-1021",
-    "frecuencia": "Quincenal",
-    "tipo": "VIP",
-    "total_gastado": 77331,
-    "metodo_pago": "Transferencia"
+    "frecuencia": "Mensual",
+    "tipo": "Inactivo",
+    "total_gastado": 10859,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Zapote"
   },
   {
     "id": 23,
-    "nombre": "Natalia Castillo",
+    "nombre": "David Ramírez",
     "correo": "cliente23@ejemplo.com",
     "telefono": "8888-1022",
-    "frecuencia": "Ocasional",
+    "frecuencia": "Quincenal",
     "tipo": "Frecuente",
-    "total_gastado": 47753,
-    "metodo_pago": "Efectivo"
+    "total_gastado": 30338,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Desamparados"
   },
   {
     "id": 24,
-    "nombre": "Sofía Jiménez",
+    "nombre": "Camila Ramírez",
     "correo": "cliente24@ejemplo.com",
     "telefono": "8888-1023",
     "frecuencia": "Quincenal",
-    "tipo": "Frecuente",
-    "total_gastado": 157203,
-    "metodo_pago": "Efectivo"
+    "tipo": "Inactivo",
+    "total_gastado": 172616,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Zapote"
   },
   {
     "id": 25,
-    "nombre": "Isabel Vargas",
+    "nombre": "Daniel Rodríguez",
     "correo": "cliente25@ejemplo.com",
     "telefono": "8888-1024",
-    "frecuencia": "Quincenal",
-    "tipo": "Frecuente",
-    "total_gastado": 169072,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Mensual",
+    "tipo": "VIP",
+    "total_gastado": 119058,
+    "metodo_pago": "Efectivo",
+    "sucursal": "San Pedro"
   },
   {
     "id": 26,
-    "nombre": "Sofía Rodríguez",
+    "nombre": "Luis Rodríguez",
     "correo": "cliente26@ejemplo.com",
     "telefono": "8888-1025",
-    "frecuencia": "Semanal",
+    "frecuencia": "Ocasional",
     "tipo": "VIP",
-    "total_gastado": 178027,
-    "metodo_pago": "Sinpe Móvil"
+    "total_gastado": 95879,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 27,
-    "nombre": "Laura Vargas",
+    "nombre": "Valentina Gómez",
     "correo": "cliente27@ejemplo.com",
     "telefono": "8888-1026",
-    "frecuencia": "Quincenal",
+    "frecuencia": "Ocasional",
     "tipo": "Nuevo",
-    "total_gastado": 23947,
-    "metodo_pago": "Efectivo"
+    "total_gastado": 105441,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Moravia"
   },
   {
     "id": 28,
-    "nombre": "Miguel Rojas",
+    "nombre": "María Ramírez",
     "correo": "cliente28@ejemplo.com",
     "telefono": "8888-1027",
     "frecuencia": "Quincenal",
     "tipo": "VIP",
-    "total_gastado": 29808,
-    "metodo_pago": "Efectivo"
+    "total_gastado": 149187,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Moravia"
   },
   {
     "id": 29,
-    "nombre": "Luis Jiménez",
+    "nombre": "Felipe Salazar",
     "correo": "cliente29@ejemplo.com",
     "telefono": "8888-1028",
-    "frecuencia": "Semanal",
-    "tipo": "Nuevo",
-    "total_gastado": 24373,
-    "metodo_pago": "Transferencia"
+    "frecuencia": "Ocasional",
+    "tipo": "VIP",
+    "total_gastado": 49331,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 30,
-    "nombre": "Ana Jiménez",
+    "nombre": "Felipe Vargas",
     "correo": "cliente30@ejemplo.com",
     "telefono": "8888-1029",
-    "frecuencia": "Quincenal",
+    "frecuencia": "Semanal",
     "tipo": "Frecuente",
-    "total_gastado": 109958,
-    "metodo_pago": "Tarjeta"
+    "total_gastado": 141342,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 31,
-    "nombre": "Isabel Castillo",
+    "nombre": "Lucía Salazar",
     "correo": "cliente31@ejemplo.com",
     "telefono": "8888-1030",
-    "frecuencia": "Quincenal",
-    "tipo": "VIP",
-    "total_gastado": 179311,
-    "metodo_pago": "Efectivo"
+    "frecuencia": "Ocasional",
+    "tipo": "Inactivo",
+    "total_gastado": 153446,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 32,
-    "nombre": "Felipe Jiménez",
+    "nombre": "Andrés Mora",
     "correo": "cliente32@ejemplo.com",
     "telefono": "8888-1031",
     "frecuencia": "Ocasional",
     "tipo": "Frecuente",
-    "total_gastado": 123166,
-    "metodo_pago": "Tarjeta"
+    "total_gastado": 18775,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Desamparados"
   },
   {
     "id": 33,
-    "nombre": "Natalia Vargas",
+    "nombre": "David Mora",
     "correo": "cliente33@ejemplo.com",
     "telefono": "8888-1032",
-    "frecuencia": "Mensual",
-    "tipo": "Frecuente",
-    "total_gastado": 43207,
-    "metodo_pago": "Transferencia"
+    "frecuencia": "Quincenal",
+    "tipo": "Nuevo",
+    "total_gastado": 6165,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 34,
-    "nombre": "Laura Mora",
+    "nombre": "Ana Rodríguez",
     "correo": "cliente34@ejemplo.com",
     "telefono": "8888-1033",
-    "frecuencia": "Semanal",
-    "tipo": "VIP",
-    "total_gastado": 158757,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Quincenal",
+    "tipo": "Inactivo",
+    "total_gastado": 37119,
+    "metodo_pago": "Efectivo",
+    "sucursal": "San Pedro"
   },
   {
     "id": 35,
-    "nombre": "Isabel Mora",
+    "nombre": "Laura Salazar",
     "correo": "cliente35@ejemplo.com",
     "telefono": "8888-1034",
-    "frecuencia": "Ocasional",
+    "frecuencia": "Quincenal",
     "tipo": "Nuevo",
-    "total_gastado": 48883,
-    "metodo_pago": "Tarjeta"
+    "total_gastado": 112794,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 36,
-    "nombre": "Valentina Ramírez",
+    "nombre": "Carlos Jiménez",
     "correo": "cliente36@ejemplo.com",
     "telefono": "8888-1035",
-    "frecuencia": "Mensual",
+    "frecuencia": "Ocasional",
     "tipo": "Frecuente",
-    "total_gastado": 116329,
-    "metodo_pago": "Transferencia"
+    "total_gastado": 124848,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "San Pedro"
   },
   {
     "id": 37,
-    "nombre": "Carlos Jiménez",
+    "nombre": "Valentina Rojas",
     "correo": "cliente37@ejemplo.com",
     "telefono": "8888-1036",
-    "frecuencia": "Ocasional",
-    "tipo": "Frecuente",
-    "total_gastado": 107326,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Semanal",
+    "tipo": "VIP",
+    "total_gastado": 89322,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Desamparados"
   },
   {
     "id": 38,
-    "nombre": "Gabriela Ramírez",
+    "nombre": "Ana Rodríguez",
     "correo": "cliente38@ejemplo.com",
     "telefono": "8888-1037",
-    "frecuencia": "Semanal",
-    "tipo": "Frecuente",
-    "total_gastado": 186367,
-    "metodo_pago": "Tarjeta"
+    "frecuencia": "Quincenal",
+    "tipo": "Inactivo",
+    "total_gastado": 102895,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Desamparados"
   },
   {
     "id": 39,
-    "nombre": "Natalia Rojas",
+    "nombre": "Natalia Castillo",
     "correo": "cliente39@ejemplo.com",
     "telefono": "8888-1038",
-    "frecuencia": "Ocasional",
-    "tipo": "VIP",
-    "total_gastado": 118779,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Semanal",
+    "tipo": "Inactivo",
+    "total_gastado": 184351,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Desamparados"
   },
   {
     "id": 40,
-    "nombre": "Lucía Jiménez",
+    "nombre": "Andrés Rojas",
     "correo": "cliente40@ejemplo.com",
     "telefono": "8888-1039",
-    "frecuencia": "Quincenal",
-    "tipo": "VIP",
-    "total_gastado": 197554,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Ocasional",
+    "tipo": "Frecuente",
+    "total_gastado": 25339,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Zapote"
   },
   {
     "id": 41,
-    "nombre": "Laura Fernández",
+    "nombre": "Laura Gómez",
     "correo": "cliente41@ejemplo.com",
     "telefono": "8888-1040",
-    "frecuencia": "Mensual",
+    "frecuencia": "Semanal",
     "tipo": "Nuevo",
-    "total_gastado": 17665,
-    "metodo_pago": "Efectivo"
+    "total_gastado": 96042,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Moravia"
   },
   {
     "id": 42,
-    "nombre": "Sofía Jiménez",
+    "nombre": "Daniel Fernández",
     "correo": "cliente42@ejemplo.com",
     "telefono": "8888-1041",
-    "frecuencia": "Ocasional",
-    "tipo": "Inactivo",
-    "total_gastado": 151833,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Mensual",
+    "tipo": "Nuevo",
+    "total_gastado": 179165,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Santa Ana"
   },
   {
     "id": 43,
-    "nombre": "Isabel Rodríguez",
+    "nombre": "Lucía Vargas",
     "correo": "cliente43@ejemplo.com",
     "telefono": "8888-1042",
     "frecuencia": "Quincenal",
-    "tipo": "Frecuente",
-    "total_gastado": 37460,
-    "metodo_pago": "Efectivo"
+    "tipo": "Nuevo",
+    "total_gastado": 35651,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Zapote"
   },
   {
     "id": 44,
-    "nombre": "Carlos Rojas",
+    "nombre": "María Castillo",
     "correo": "cliente44@ejemplo.com",
     "telefono": "8888-1043",
-    "frecuencia": "Mensual",
-    "tipo": "VIP",
-    "total_gastado": 198031,
-    "metodo_pago": "Transferencia"
+    "frecuencia": "Quincenal",
+    "tipo": "Nuevo",
+    "total_gastado": 104059,
+    "metodo_pago": "Tarjeta",
+    "sucursal": "Desamparados"
   },
   {
     "id": 45,
-    "nombre": "Andrés Fernández",
+    "nombre": "Carlos Rojas",
     "correo": "cliente45@ejemplo.com",
     "telefono": "8888-1044",
     "frecuencia": "Mensual",
-    "tipo": "Frecuente",
-    "total_gastado": 179809,
-    "metodo_pago": "Transferencia"
+    "tipo": "Inactivo",
+    "total_gastado": 86616,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Desamparados"
   },
   {
     "id": 46,
-    "nombre": "Daniel Fernández",
+    "nombre": "Luis Rojas",
     "correo": "cliente46@ejemplo.com",
     "telefono": "8888-1045",
-    "frecuencia": "Semanal",
-    "tipo": "Frecuente",
-    "total_gastado": 80862,
-    "metodo_pago": "Sinpe Móvil"
+    "frecuencia": "Quincenal",
+    "tipo": "VIP",
+    "total_gastado": 102389,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "San Pedro"
   },
   {
     "id": 47,
-    "nombre": "Sofía Vargas",
+    "nombre": "María Rodríguez",
     "correo": "cliente47@ejemplo.com",
     "telefono": "8888-1046",
-    "frecuencia": "Semanal",
-    "tipo": "Nuevo",
-    "total_gastado": 33729,
-    "metodo_pago": "Transferencia"
+    "frecuencia": "Quincenal",
+    "tipo": "VIP",
+    "total_gastado": 33502,
+    "metodo_pago": "Transferencia",
+    "sucursal": "Zapote"
   },
   {
     "id": 48,
-    "nombre": "Sofía Rojas",
+    "nombre": "Pedro Gómez",
     "correo": "cliente48@ejemplo.com",
     "telefono": "8888-1047",
-    "frecuencia": "Ocasional",
-    "tipo": "Inactivo",
-    "total_gastado": 113624,
-    "metodo_pago": "Efectivo"
+    "frecuencia": "Mensual",
+    "tipo": "VIP",
+    "total_gastado": 147740,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Desamparados"
   },
   {
     "id": 49,
-    "nombre": "Miguel Gómez",
+    "nombre": "Ana Salazar",
     "correo": "cliente49@ejemplo.com",
     "telefono": "8888-1048",
     "frecuencia": "Mensual",
-    "tipo": "VIP",
-    "total_gastado": 121890,
-    "metodo_pago": "Efectivo"
+    "tipo": "Frecuente",
+    "total_gastado": 114619,
+    "metodo_pago": "Efectivo",
+    "sucursal": "Zapote"
   },
   {
     "id": 50,
-    "nombre": "Isabel Vargas",
+    "nombre": "Daniel Vargas",
     "correo": "cliente50@ejemplo.com",
     "telefono": "8888-1049",
     "frecuencia": "Mensual",
-    "tipo": "Frecuente",
-    "total_gastado": 120272,
-    "metodo_pago": "Transferencia"
+    "tipo": "VIP",
+    "total_gastado": 191739,
+    "metodo_pago": "Sinpe Móvil",
+    "sucursal": "Moravia"
   }
 ]

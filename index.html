@@ -1,73 +1,80 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>CRM Prof. Paulo — Sucursales</title>
-<link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Supermercado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #007BFF;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        button {
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
-<header class="topbar">
-  <div class="container">
-    <h1>CRM Prof. Paulo</h1>
-    <div class="controls">
-      <select id="filterSucursal"><option value="Todas">Todas las sucursales</option><option value="Desamparados">Desamparados</option><option value="Moravia">Moravia</option><option value="Zapote">Zapote</option><option value="San Pedro">San Pedro</option><option value="Santa Ana">Santa Ana</option></select>
-      <input id="searchInput" placeholder="Buscar clientes o productos..." />
-      <button id="darkToggle" title="Modo oscuro">🌙</button>
-      <button id="exportCSV">Exportar CSV</button>
+    <header>
+        <div><strong>CRM Prof. Paulo</strong></div>
+        <nav>
+            <a href="#" onclick="showSection('clientes')">Clientes</a>
+            <a href="#" onclick="showSection('facturas')">Facturas</a>
+            <a href="#" onclick="showSection('productos')">Productos</a>
+            <a href="#" onclick="showSection('reportes')">Reportes</a>
+            <button onclick="toggleDarkMode()">🌙</button>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="clientes" style="display:block;">
+            <h2>Clientes</h2>
+            <p>Lista de clientes ficticios cargada.</p>
+        </section>
+        <section id="facturas" style="display:none;">
+            <h2>Facturas</h2>
+            <p>Listado de facturas ficticias.</p>
+        </section>
+        <section id="productos" style="display:none;">
+            <h2>Productos</h2>
+            <p>Inventario de productos ficticios.</p>
+        </section>
+        <section id="reportes" style="display:none;">
+            <h2>Reportes</h2>
+            <p>Gráficos y reportes ficticios.</p>
+        </section>
     </div>
-  </div>
-  <nav class="menu">
-    <button data-section="clientes" class="menu-btn active">Clientes</button>
-    <button data-section="facturas" class="menu-btn">Facturas</button>
-    <button data-section="productos" class="menu-btn">Productos</button>
-    <button data-section="reportes" class="menu-btn">Reportes</button>
-  </nav>
-</header>
-
-<main class="container">
-  <section id="clientes" class="section active">
-    <h2>Clientes</h2>
-    <div class="kpis">
-      <div class="kpi"><strong id="totalClients">0</strong><span>Clientes</span></div>
-      <div class="kpi"><strong id="totalSpent">₡0</strong><span>Total gastado</span></div>
-    </div>
-    <table id="tableClientes" class="table">
-      <thead><tr><th>ID</th><th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Frecuencia</th><th>Tipo</th><th>Total gastado</th><th>Método</th><th>Sucursal</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <section id="facturas" class="section">
-    <h2>Facturas</h2>
-    <table id="tableFacturas" class="table">
-      <thead><tr><th>Nº</th><th>Cliente</th><th>Fecha</th><th>Productos</th><th>Total</th><th>Método</th><th>Estado</th><th>Sucursal</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <section id="productos" class="section">
-    <h2>Productos</h2>
-    <table id="tableProductos" class="table">
-      <thead><tr><th>Código</th><th>Nombre</th><th>Precio</th><th>Stock</th><th>Sucursal</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <section id="reportes" class="section">
-    <h2>Reportes por producto y sucursal</h2>
-    <div class="charts">
-      <canvas id="chartProducts" style="max-width:600px"></canvas>
-      <canvas id="chartByBranch" style="max-width:600px"></canvas>
-    </div>
-    <table id="tableReport" class="table">
-      <thead><tr><th>Producto</th><th>Unidades vendidas</th><th>Total vendido</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </section>
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="app.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
